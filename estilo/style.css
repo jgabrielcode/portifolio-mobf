@@ -79,13 +79,7 @@ header > nav > a{
     
 }
 
-header >  nav a:hover{
-    background-color:var(--cor005);
-    color: var(--cor001);
-    width: 6px;
-    padding: 10px;
-    border-radius: 5px;
-}
+
 
 main{
     padding: 20px;
@@ -171,7 +165,7 @@ nome as funções e uma breve descrição sobre mim
     padding: 20px;
     display: flex;
     flex-wrap: wrap;
-    gap: 13px;
+    gap: 9px;
  }
 
 .card{
@@ -203,12 +197,7 @@ nome as funções e uma breve descrição sobre mim
 }
 
 
-.card:hover{
-    border: 3px solid var(--cor005);
-    border-bottom:5px solid #F2E205;
-    color: var(--cor002);
 
-}
 
 
 
