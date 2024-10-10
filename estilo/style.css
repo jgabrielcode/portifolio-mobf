@@ -75,14 +75,14 @@ header > nav > a{
     color: var(--cor002);
     margin: 15px;
     font-family: var(--font002);
-    font-size: 12px;
-    padding: px;
+    font-size: 15px;
+    
 }
 
 header >  nav a:hover{
     background-color:var(--cor005);
     color: var(--cor001);
-    width: 10px;
+    width: 6px;
     padding: 10px;
     border-radius: 5px;
 }
@@ -103,9 +103,8 @@ nome as funções e uma breve descrição sobre mim
     padding: 10px;
 }
 .description > h1 {
-    font-family: var(--font001);
+    font-family: var(--font002);
     margin-left: 40px;
-    
     color: var(--cor005);
 }
   
@@ -114,7 +113,7 @@ nome as funções e uma breve descrição sobre mim
 
 .description{
 
-    background-color: aqua;
+    background-color: var(--cor001);
 
 
 }
@@ -148,42 +147,65 @@ nome as funções e uma breve descrição sobre mim
     
 }
 
-/*Fim da configuração da  descripition*/
+/*Fim da configuração da div descripition*/
+/*inicio da configuração da div lenguages*/
+.lenguages{
+    color: var(--cor002);
+    background-color:  var(--cor001);
+    margin-top: 50px;
+
+ }
+
+
+ .lenguages > h3{
+    
+    font-family: var(--font002);
+    font-size: 1.5em;
+    text-align: center;
+ }
+
+ 
+
 .box{
-    background-color: red;
-    padding: 10px;
+    background-color:var(--cor001);
+    padding: 20px;
     display: flex;
-    flex-direction: column;
-    gap: 20px;
+    flex-wrap: wrap;
+    gap: 13px;
  }
 
 .card{
-    background-color: blue;
-    padding: 10px;
-    height: 40px;
-    width: 60px;
+    background-color: var(--cor001);
     
+    padding: 10px;
+    height: 100px;
+    width: 95px;
+    /*configuração para centralizar a imagem e o texto*/
+    display: flex;
+    flex-direction: column;
+    align-items: center; /*centralizei o conteudo no meio ^ no eixo y*/
+    justify-content: center;/*centralizei o conteudo no meio no eixo x <---->*/
+    border-bottom:5px solid #F2E205;border-radius: 40px 0px 0px 0px;
+   
 }
 
 .card > p{
     font-family: var(--font003);
-   
-    
-
+    color: var(--cor002);
+    margin-top: 20px;
 
 }
 
 .card > img{
-    display: block;
-    margin: auto;
-    padding: 2px;
     height: 35px;
     width: 35px;
+    
 }
 
 
 .card:hover{
     border: 3px solid var(--cor005);
+    border-bottom:5px solid #F2E205;
     color: var(--cor002);
 
 }
@@ -198,38 +220,23 @@ nome as funções e uma breve descrição sobre mim
  
 
 
-.lenguages{
-    color: var(--cor002);
-   
-    background-color:  var(--cor001);
-   
-    
-    
-   
- }
-
-
- .lenguages > h3{
-    
-    font-family: var(--font002);
- }
+/*Fim da configuração da div descripition*/
 
  
 
  .contact{
+    margin-top: 50px;
     font-family: var(--font002);
-   
    background-color: var(--cor001);
    
  }
 
  .contact > h3{
 
-    
+    text-align: center;
+    color: var(--cor002);
     font-family: var(--font002);
+    font-size: 1.5em;
  }
 
- h3::after{
-    content: "\2192 ";
-    
-}
+ 
