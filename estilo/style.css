@@ -1,19 +1,20 @@
 @charset "UTF-8";
+
 @font-face {
     font-family: 'soulmaze';
     src: url(../Fontes/made_soulmaze/MADE\ Soulmaze\ Italic\ PERSONAL\ USE.otf) format(opentype);
 }
 @font-face {
     font-family: 'Garet';
-    src: url(Fontes/garet/Garet-Book.otf) format(opentype);
+    src: url(../Fontes/garet/Garet-Book.otf) format(opentype);
 }
 @font-face {
     font-family: 'altone';
-    src: url(Fontes/altone/Altone\ Trial-Regular.ttf) format(truetype);
+    src: url(../Fontes/altone/Altone\ Trial-Regular.ttf) format(truetype);
 }
 @font-face {
     font-family: 'display';
-    src: url(Fontes/creato_display/CreatoDisplay-Regular.otf) format(opentype);
+    src: url(../Fontes/creato_display/CreatoDisplay-Regular.otf) format(opentype);
 }
 /*
 OBS:
@@ -25,11 +26,13 @@ deixar o texto em cima e a imagem em baixo
 
 
 :root{
-    --cor001:#0D0D0D;
-    --cor002:#F2F2F2;
-    --cor003:#262626;
-    --cor004:#737373;
-    --cor005:#F2E205;
+    --corback:#F2F2F2;
+    --corback1:#0554F2;
+    --cortitle:#0554F2;
+    --cortext001:var(--corback);
+    --cortext002:#0D0D0D;
+    --coricons:#076DF2;
+    --coricons1:#F21D2F;
     
     
 
@@ -52,7 +55,7 @@ COLOQUEI VW NA DISCRIÇAO
 }
 
 body{
-    background-color: var(--cor001); 
+    background-color: var(--corback); 
     max-width: 100vw;
    
     
@@ -64,7 +67,7 @@ header{
 header > nav{
     
     margin: auto;
-    background-color: var(--cor001);
+    background-color: var(--corback);
     text-align: center;
     font-family: var(--font004);
     
@@ -72,10 +75,11 @@ header > nav{
 
 header > nav > a{
     text-decoration: none;
-    color: var(--cor002);
+    color: var(--cortext002);
     margin: 15px;
     font-family: var(--font002);
     font-size: 15px;
+    
     
 }
 
@@ -83,6 +87,7 @@ header > nav > a{
 
 main{
     padding: 20px;
+    margin: auto;
     
     
 
@@ -91,31 +96,23 @@ main{
 /*Configuraçoes da div descripition onde terá o
 nome as funções e uma breve descrição sobre mim
 */
-.container1{
-    margin: 10px;
-    background-color: #F2E205;
-    padding: 10px;
+.description{
+    padding: 15px;
+    background-color: var(--corback1);
+    border-radius: 20px;
+
+
 }
+
 .description > h1 {
     font-family: var(--font002);
-    margin-left: 40px;
-    color: var(--cor005);
+    color: var(--corback);
+    margin-left: 15px;
 }
-  
-
-
-
-.description{
-
-    background-color: var(--cor001);
-
-
-}
-
 
 #role{
     font-family: var(--font002);
-    margin-left: 20px;
+   
     
 }
 
@@ -125,8 +122,9 @@ nome as funções e uma breve descrição sobre mim
     
     font-size: 2em;
     font-family: var(--font002);
-    color: var(--cor005);
-    margin-left: 40px;
+    color: var(--corback);
+    margin-left: 15px;
+
 }
 
 
@@ -134,8 +132,8 @@ nome as funções e uma breve descrição sobre mim
 .description > p {
     font-size: 16px;
     font-family: var(--font002);
-    color: #F2F2F2;
-    margin-left: 20px;
+    color:var(--cortext001);
+    
     text-align: justify;
     padding: 20px;
     
@@ -144,8 +142,8 @@ nome as funções e uma breve descrição sobre mim
 /*Fim da configuração da div descripition*/
 /*inicio da configuração da div lenguages*/
 .lenguages{
-    color: var(--cor002);
-    background-color:  var(--cor001);
+    color: var(--cortext001);
+    background-color:  var(--corback);
     margin-top: 50px;
 
  }
@@ -154,6 +152,7 @@ nome as funções e uma breve descrição sobre mim
  .lenguages > h3{
     
     font-family: var(--font002);
+    color: var(--cortitle);
     font-size: 1.5em;
     text-align: center;
  }
@@ -161,7 +160,7 @@ nome as funções e uma breve descrição sobre mim
  
 
 .box{
-    background-color:var(--cor001);
+    background-color:var(--corback);
     padding: 20px;
     display: flex;
     flex-wrap: wrap;
@@ -169,8 +168,7 @@ nome as funções e uma breve descrição sobre mim
  }
 
 .card{
-    background-color: var(--cor001);
-    
+    background-color: var(--corback1);
     padding: 10px;
     height: 100px;
     width: 95px;
@@ -179,13 +177,14 @@ nome as funções e uma breve descrição sobre mim
     flex-direction: column;
     align-items: center; /*centralizei o conteudo no meio ^ no eixo y*/
     justify-content: center;/*centralizei o conteudo no meio no eixo x <---->*/
-    border-bottom:5px solid #F2E205;border-radius: 40px 0px 0px 0px;
+    border-bottom:5px solid var(--coricons1);
+    border-radius: 40px 0px 20px 0px;
    
 }
 
 .card > p{
-    font-family: var(--font003);
-    color: var(--cor002);
+    font-family: var(--font002);
+    color: var(--corback);
     margin-top: 20px;
 
 }
@@ -204,7 +203,7 @@ nome as funções e uma breve descrição sobre mim
 
 .card > p > a{
     text-decoration: none;
-    color: white;
+    color: var(--cortext001);
 }
  
 
@@ -216,14 +215,14 @@ nome as funções e uma breve descrição sobre mim
  .contact{
     margin-top: 50px;
     font-family: var(--font002);
-   background-color: var(--cor001);
+   background-color: var(--corback);
    
  }
 
  .contact > h3{
 
     text-align: center;
-    color: var(--cor002);
+    color: var(--cortitle);
     font-family: var(--font002);
     font-size: 1.5em;
  }
