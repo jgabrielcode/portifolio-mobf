@@ -26,13 +26,13 @@ deixar o texto em cima e a imagem em baixo
 
 
 :root{
-    --corback:#F2F2F2;
-    --corback1:#0554F2;
-    --cortitle:#0554F2;
-    --cortext001:var(--corback);
-    --cortext002:#0D0D0D;
+    --corback:#262626;
+    --corback1:#464646;
+    --cortitle:#F2F2F2;
+    --cortext001:#BFBFBF;
+    --cortext002:#BFBFBF;
     --coricons:#076DF2;
-    --coricons1:#F21D2F;
+    --coricons1:#044BD9;
     
     
 
@@ -63,7 +63,7 @@ body{
 header{
     padding: 25px;
 }
-
+/*Fazer um menu Hamburguer no nav*/
 header > nav{
     
     margin: auto;
@@ -75,7 +75,7 @@ header > nav{
 
 header > nav > a{
     text-decoration: none;
-    color: var(--cortext002);
+    color: var(--cortext001);
     margin: 15px;
     font-family: var(--font002);
     font-size: 15px;
@@ -100,13 +100,14 @@ nome as funções e uma breve descrição sobre mim
     padding: 15px;
     background-color: var(--corback1);
     border-radius: 20px;
+    border-bottom: 5px solid var(--coricons1);
 
 
 }
 
 .description > h1 {
     font-family: var(--font002);
-    color: var(--corback);
+    color: var(--cortitle);
     margin-left: 15px;
 }
 
@@ -118,11 +119,10 @@ nome as funções e uma breve descrição sobre mim
 
 
 .description > h2{
-
-    
+    text-align: center;
     font-size: 2em;
     font-family: var(--font002);
-    color: var(--corback);
+    color: var(--cortitle);
     margin-left: 15px;
 
 }
@@ -157,7 +157,33 @@ nome as funções e uma breve descrição sobre mim
     text-align: center;
  }
 
- 
+ .projects{
+    background-color: var(--corback1);
+    color: var(--cortitle);
+    font-family: var(--font002);
+    font-size: 1.5em;
+    text-align: center;
+    padding: 10px;
+    border-radius: 20px ;
+    border-bottom: 5px solid var(--coricons1);
+ }
+
+ .contact{
+    margin-top: 50px;
+    font-family: var(--font002);
+   background-color: var(--corback);
+   
+ }
+
+ .contact > h3{
+
+    text-align: center;
+    color: var(--cortitle);
+    font-family: var(--font002);
+    font-size: 1.5em;
+ }
+
+ /*Configuração card e box*/
 
 .box{
     background-color:var(--corback);
@@ -184,7 +210,7 @@ nome as funções e uma breve descrição sobre mim
 
 .card > p{
     font-family: var(--font002);
-    color: var(--corback);
+    color: var(--cortext001);
     margin-top: 20px;
 
 }
@@ -208,23 +234,10 @@ nome as funções e uma breve descrição sobre mim
  
 
 
-/*Fim da configuração da div descripition*/
+/*Fim da configuração da div card e box*/
 
  
 
- .contact{
-    margin-top: 50px;
-    font-family: var(--font002);
-   background-color: var(--corback);
-   
- }
 
- .contact > h3{
-
-    text-align: center;
-    color: var(--cortitle);
-    font-family: var(--font002);
-    font-size: 1.5em;
- }
 
  
