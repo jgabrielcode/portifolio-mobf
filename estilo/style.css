@@ -93,20 +93,31 @@ main{
 
 }
 /*div profile onde tera meu nome ao lado esquerdo e um icon ao lado direito*/
-
 .profile{
-    
-
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom:20px ;
+    padding: 10px;
 }
-.profile > h1 {
+.profile > img{
+    width: 150px;
+    height: 150px;
+    margin:0px  15px 10px 0px;
+    
+}
+.info > h1 {
+    font-size: 1.6em;
     font-family: var(--font002);
     color: var(--cortitle);
-    margin-left: 15px;
+    
 }
 
 #role{
+   margin-top: 10px;
     font-family: var(--font002);
    color: var(--cortitle);
+   width: 210px;
     
 }
 
