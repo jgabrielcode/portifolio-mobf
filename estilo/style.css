@@ -31,7 +31,7 @@ deixar o texto em cima e a imagem em baixo
     --cortitle:#F2F2F2;
     --cortext001:#BFBFBF;
     --cortext002:#BFBFBF;
-    --coricons:#076DF2;
+    --coricons:#076df2;
     --coricons1:#044BD9;
     
     
@@ -78,7 +78,7 @@ header > nav > a{
     color: var(--cortext001);
     margin: 15px;
     font-family: var(--font002);
-    font-size: 15px;
+    font-size: 22px;
     
     
 }
@@ -92,9 +92,26 @@ main{
     
 
 }
+/*div profile onde tera meu nome ao lado esquerdo e um icon ao lado direito*/
 
-/*Configuraçoes da div descripition onde terá o
-nome as funções e uma breve descrição sobre mim
+.profile{
+    
+
+}
+.profile > h1 {
+    font-family: var(--font002);
+    color: var(--cortitle);
+    margin-left: 15px;
+}
+
+#role{
+    font-family: var(--font002);
+   color: var(--cortitle);
+    
+}
+
+
+/*Configuraçoes da div descripition onde terá uma breve descrição sobre mim
 */
 .description{
     padding: 15px;
@@ -105,17 +122,7 @@ nome as funções e uma breve descrição sobre mim
 
 }
 
-.description > h1 {
-    font-family: var(--font002);
-    color: var(--cortitle);
-    margin-left: 15px;
-}
 
-#role{
-    font-family: var(--font002);
-   
-    
-}
 
 
 .description > h2{
@@ -189,6 +196,7 @@ nome as funções e uma breve descrição sobre mim
     background-color:var(--corback);
     padding: 20px;
     display: flex;
+    justify-content: center;
     flex-wrap: wrap;
     gap: 9px;
  }
