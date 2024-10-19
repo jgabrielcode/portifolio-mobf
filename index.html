@@ -10,14 +10,18 @@
 </head>
 <body>
     <header>
-        <span id="burguer" class="material-symbols-outlined" onclick="clickMenu()" >
+     <span id="burguer" class="material-symbols-outlined" onclick="clickMenu()" >
             menu
             </span>
         <nav id="menu">
-            <a href="#">Projetos</a>
-            <a href="#">Design Grafico</a>
-            <a href="#conta">Contatos</a>
-            <a href="#">Curriculo</a>
+
+            <ul>
+               <li> <a href="#">Projetos</a>
+               <li> <a href="#">Design Grafico</a>
+               <li> <a href="#conta">Contatos</a>
+               <li> <a href="#">Curriculo</a>
+            </ul>
+
         </nav>
     
 
@@ -113,7 +117,8 @@
 
     
     <div class="card">
-        <img src="img/instagram.svg" alt="instaicon">
+        
+        <img src="img/instagram.svg" alt="instaicon"  >
         <p><a href="https://www.instagram.com/zbmstudio__/" target="_blank">INSTAGRAM</a></p>
 </div>
 
@@ -122,10 +127,14 @@
 
 </main>
 <script>
-    function clickMenu(){
-        if itens.style.display {
 
+    function clickMenu(){
+        if (menu.style.display == 'block') {
+         menu.style.display = 'none';
+        } else {
+            menu.style.display ='block';
         }
+
     }
 </script>
     

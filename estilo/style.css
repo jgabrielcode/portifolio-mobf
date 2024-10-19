@@ -65,21 +65,21 @@ header{
 }
 /*Fazer um menu Hamburguer no nav*/
 #burguer{
-    background-color: var(--coricons);
     display: block;
     color: #F2F2F2;
     text-align: center;
+    cursor: pointer;
 }
 header > nav{
     display: none;
     margin: auto;
-    background-color: var(--corback);
+    margin-top: 25px;
     text-align: center;
     font-family: var(--font004);
     
 }
 
-header > nav > a{
+header > nav > ul > li > a{
     text-decoration: none;
     color: var(--cortext001);
     margin: 15px;
@@ -88,6 +88,14 @@ header > nav > a{
     
     
 }
+
+ ul > li  {
+    list-style: none;
+    margin-bottom: 10px;
+}
+
+
+
 
 
 
