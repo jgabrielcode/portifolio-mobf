@@ -15,7 +15,17 @@ header > nav > a{
 }
 
 .profile{
-background-color: aqua;
+
+
 }
 
+.info > h1 {
+    font-size: 3em;
+}
+
+#role{
+    width: 400px;
+    font-size: 1.4em;
+
+}
 
