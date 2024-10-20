@@ -16,6 +16,8 @@
     font-family: 'display';
     src: url(../Fontes/creato_display/CreatoDisplay-Regular.otf) format('opentype');
 }
+
+
 /*
 OBS:
 usar display flex colum
@@ -26,20 +28,20 @@ deixar o texto em cima e a imagem em baixo
 
 
 :root{
-    --corback:#262626;
-    --corback1:#464646;
+    --corback:#0D0D0D;
+    --corback1:#262626;
     --cortitle:#F2F2F2;
-    --cortext001:#BFBFBF;
-    --cortext002:#BFBFBF;
-    --coricons:#076df2;
-    --coricons1:#044BD9;
+    --cortext001:#4B0AA6;
+    --cortext002:#F2F2F2;
+    --coricons:#4B0AA6;
+    --coricons1:#F2E205;
     
     
 
 
 --font001:'soulmaze';
 --font002:'Garet';
---font003:'altone';
+--fonttitle:'montserrat';
 --font004:'display';
 
 
@@ -83,7 +85,7 @@ header > nav{
 
 header > nav > ul > li > a{
     text-decoration: none;
-    color: var(--cortext001);
+    color: var(--cortext002);
     margin: 15px;
     font-family: var(--font002);
     font-size: 22px;
@@ -111,7 +113,7 @@ main{
 /*div profile onde tera meu nome ao lado esquerdo e um icon ao lado direito*/
 .profile{
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     margin-bottom:20px ;
     padding: 10px;
@@ -123,17 +125,19 @@ main{
     
 }
 .info > h1 {
-    font-size: 1.6em;
+    font-size: 2.3em;
     font-family: var(--font002);
     color: var(--cortitle);
+    text-align: center;
     
 }
 
 #role{
-   margin-top: 10px;
+   margin-top: 15px;
+   font-size: 1.3em;
     font-family: var(--font002);
-   color: var(--cortitle);
-   width: 210px;
+   color: var(--cortext002);
+   
     
 }
 
@@ -142,12 +146,13 @@ main{
 */
 .description{
     padding: 15px;
+    margin-top: 50px;
     background-color: var(--corback1);
     border-radius: 20px;
-    border-bottom: 5px solid var(--coricons1);
-
-
+    box-shadow: 6px 5px 10px var(--coricons);
+    /*border-bottom: 4px solid var(--coricons);*/
 }
+
 
 
 
@@ -156,7 +161,7 @@ main{
     text-align: center;
     font-size: 2em;
     font-family: var(--font002);
-    color: var(--cortitle);
+    color: var(--cortext002);
     margin-left: 15px;
 
 }
@@ -166,7 +171,7 @@ main{
 .description > p {
     font-size: 16px;
     font-family: var(--font002);
-    color:var(--cortext001);
+    color:var(--cortext002);
     
     text-align: justify;
     padding: 20px;
@@ -193,13 +198,13 @@ main{
 
  .projects{
     background-color: var(--corback1);
-    color: var(--cortitle);
+    color: var(--cortext002);
     font-family: var(--font002);
     font-size: 1.5em;
     text-align: center;
     padding: 10px;
-    border-radius: 20px ;
-    border-bottom: 5px solid var(--coricons1);
+    border-radius: 40px 0px 20px 0px ;
+    box-shadow: 6px 5px 10px var(--coricons);
  }
 
  .contact{
@@ -225,7 +230,7 @@ main{
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 9px;
+    gap: 12px;
  }
 
 .card{
@@ -240,14 +245,13 @@ main{
     flex-direction: column;
     align-items: center; /*centralizei o conteudo no meio ^ no eixo y*/
     justify-content: center;/*centralizei o conteudo no meio no eixo x <---->*/
-    border-bottom:5px solid var(--coricons1);
     border-radius: 40px 0px 20px 0px;
-   
+    box-shadow: 3px 3px 4px var(--coricons);
 }
 
 .card > p{
     font-family: var(--font002);
-    color: var(--cortext001);
+    color: var(--cortext002);
     margin-top: 20px;
 
 }
@@ -266,7 +270,7 @@ main{
 
 .card > p > a{
     text-decoration: none;
-    color: var(--cortext001);
+    color: var(--cortext002);
 }
  
 

@@ -17,9 +17,8 @@ header > nav > a{
 }
 
 #role{
-    width: 400px;
     font-size: 1.4em;
-
+text-align: center;
 }
 
 .profile > img{

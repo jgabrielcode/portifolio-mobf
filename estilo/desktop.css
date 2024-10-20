@@ -18,13 +18,13 @@
 }
 
 :root{
-    --corback:#262626;
-    --corback1:#464646;
+    --corback:#0D0D0D;
+    --corback1:#262626;
     --cortitle:#F2F2F2;
-    --cortext001:#BFBFBF;
-    --cortext002:#BFBFBF;
-    --coricons:#076df2;
-    --coricons1:#044BD9;
+    --cortext001:#4B0AA6;
+    --cortext002:#F2F2F2;
+    --coricons:#4B0AA6;
+    --coricons1:#F2E205;
 
     --font001:'soulmaze';
     --font002:'Garet';
@@ -66,10 +66,8 @@ li > a{
     border-bottom: 3px solid var(--coricons);
     box-sizing: border-box;
 }
-.profile > img{
-    width: 400px;
-    height: 400px;
-}
+
+
 .info > h1{
     font-size:3em;
 
@@ -83,16 +81,17 @@ li > a{
 
 #role{
     font-size: 1.4em;
-    width: 300px;
+    text-align: center;
 }
 
 .card{
     
     padding-top: 25px;
+    box-shadow: none;
 }
  .card:hover {
-background-color: var(--coricons1);
-
+background-color: var(--coricons);
+ 
 }
 
  
