@@ -2,19 +2,19 @@
 
 @font-face {
     font-family: 'soulmaze';
-    src: url(../Fontes/made_soulmaze/MADE\ Soulmaze\ Italic\ PERSONAL\ USE.otf) format(opentype);
+    src: url(../Fontes/made_soulmaze/MADE\ Soulmaze\ Italic\ PERSONAL\ USE.otf) format('opentype');
 }
 @font-face {
     font-family: 'Garet';
-    src: url(../Fontes/garet/Garet-Book.otf) format(opentype);
+    src: url(../Fontes/garet/Garet-Book.otf) format('opentype');
 }
 @font-face {
     font-family: 'altone';
-    src: url(../Fontes/altone/Altone\ Trial-Regular.ttf) format(truetype);
+    src: url(../Fontes/altone/Altone\ Trial-Regular.ttf) format('truetype');
 }
 @font-face {
     font-family: 'display';
-    src: url(../Fontes/creato_display/CreatoDisplay-Regular.otf) format(opentype);
+    src: url(../Fontes/creato_display/CreatoDisplay-Regular.otf) format('opentype');
 }
 /*
 OBS:
@@ -52,6 +52,7 @@ COLOQUEI VW NA DISCRIÇAO
 *{
     margin: 0px;
     padding: 0px;
+    box-sizing: border-box;
 }
 
 body{
@@ -61,7 +62,8 @@ body{
     
 }
 header{
-    padding: 25px;
+    padding: 15px;
+    border-bottom: 4px solid var(--coricons1);
 }
 /*Fazer um menu Hamburguer no nav*/
 #burguer{
@@ -228,9 +230,10 @@ main{
 
 .card{
     background-color: var(--corback1);
+    font-size: 13px;
     padding: 10px;
-    height: 100px;
-    width: 95px;
+    height: 120px;
+    width: 100px;
     cursor: pointer;
     /*configuração para centralizar a imagem e o texto*/
     display: flex;

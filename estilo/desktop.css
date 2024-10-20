@@ -1,0 +1,98 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'soulmaze';
+    src: url(../Fontes/made_soulmaze/MADE\ Soulmaze\ Italic\ PERSONAL\ USE.otf) format('opentype');
+}
+@font-face {
+    font-family: 'Garet';
+    src: url(../Fontes/garet/Garet-Book.otf) format('opentype');
+}
+@font-face {
+    font-family: 'altone';
+    src: url(../Fontes/altone/Altone\ Trial-Regular.ttf) format('truetype');
+}
+@font-face {
+    font-family: 'display';
+    src: url(../Fontes/creato_display/CreatoDisplay-Regular.otf) format('opentype');
+}
+
+:root{
+    --corback:#262626;
+    --corback1:#464646;
+    --cortitle:#F2F2F2;
+    --cortext001:#BFBFBF;
+    --cortext002:#BFBFBF;
+    --coricons:#076df2;
+    --coricons1:#044BD9;
+
+    --font001:'soulmaze';
+    --font002:'Garet';
+    --font003:'altone';
+    --font004:'display';
+}
+
+
+
+#burguer{
+    display: none;
+}
+
+
+
+header > nav {
+    display: flex;
+    justify-content: center;
+   
+}
+
+ul {
+    display: flex;
+    gap: 35px;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    
+   
+   
+}
+
+li > a{
+    padding: 10px;
+    
+}
+
+ li > a:hover{
+    border-bottom: 3px solid var(--coricons);
+    box-sizing: border-box;
+}
+.profile > img{
+    width: 400px;
+    height: 400px;
+}
+.info > h1{
+    font-size:3em;
+
+}
+
+.description{
+    width: 70vw;
+    margin: auto;
+    
+}
+
+#role{
+    font-size: 1.4em;
+    width: 300px;
+}
+
+.card{
+    
+    padding-top: 25px;
+}
+ .card:hover {
+background-color: var(--coricons1);
+
+}
+
+ 

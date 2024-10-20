@@ -1,5 +1,38 @@
 @charset "UTF-8";
 
-body{
-    background-color: brown;
+header > nav > a{
+    font-size: 1.4em;
+}
+
+
+.box{
+    justify-content: center;
+
+}
+
+
+
+.info > h1 {
+    font-size: 3em;
+}
+
+#role{
+    width: 400px;
+    font-size: 1.4em;
+
+}
+
+.profile > img{
+    width: 300px;
+    height: 300px;
+   
+    
+   
+
+}
+
+.description{
+    width: 70vw;
+    margin: auto;
+    
 }
