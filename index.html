@@ -11,7 +11,7 @@
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
     <title>Meu Portifólio</title>
 </head>
-<body>
+<body onresize="mudouTamanho()">
     <header>
      <span id="burguer" class="material-symbols-outlined" onclick="clickMenu()" >
             menu
@@ -137,6 +137,14 @@
 
 </main>
 <script>
+
+    function mudouTamanho(){
+        if (window.innerWidth >= 1020){
+            menu.style.display ='block'
+        }else{
+            menu.style.display = 'none'
+        }
+    }
 
     function clickMenu(){
         if (menu.style.display == 'block') {
