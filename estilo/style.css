@@ -89,8 +89,7 @@ header > nav > ul > li > a{
     margin: 15px;
     font-family: var(--font002);
     font-size: 22px;
-    
-    
+     
 }
 
  ul > li  {
@@ -98,17 +97,11 @@ header > nav > ul > li > a{
     margin-bottom: 10px;
 }
 
-
-
-
-
-
 main{
     padding: 20px;
     margin: auto;
     margin-bottom: 150px;
     
-
 }
 /*div profile onde tera meu nome ao lado esquerdo e um icon ao lado direito*/
 .profile{
@@ -116,14 +109,10 @@ main{
     justify-content: center;
     align-items: center;
     margin-bottom:20px ;
+    gap: 150px;
     padding: 10px;
 }
-.profile > img{
-    width: 150px;
-    height: 150px;
-    margin:0px  15px 10px 0px;
-    
-}
+
 .info > h1 {
     font-size: 2.1em;
     font-family: var(--font002);
@@ -133,7 +122,6 @@ main{
     
 }
 
-
 #role{
    margin-top: 15px;
    font-size: 1.2em;
@@ -141,9 +129,7 @@ main{
     font-family: var(--font002);
    color: var(--cortext002);
    
-    
 }
-
 
 /*Configuraçoes da div descripition onde terá uma breve descrição sobre mim
 */
@@ -156,10 +142,6 @@ main{
     /*border-bottom: 4px solid var(--coricons);*/
 }
 
-
-
-
-
 .description > h2{
     text-align: center;
     font-size: 2em;
@@ -168,9 +150,6 @@ main{
     margin-left: 15px;
 
 }
-
-
-
 .description > p {
     font-size: 16px;
     font-family: var(--font002);
@@ -182,14 +161,13 @@ main{
 }
 
 /*Fim da configuração da div descripition*/
+
 /*inicio da configuração da div lenguages*/
 .lenguages{
     color: var(--cortext001);
     background-color:  var(--corback);
     margin-top: 50px;
-
  }
-
 
  .lenguages > h3{
     
@@ -199,7 +177,7 @@ main{
     font-size: 1.5em;
     text-align: center;
  }
-
+/*configuração das div projects onde tera meus projetos*/
  .projects{
     background-color: var(--corback1);
     color: var(--cortext002);
@@ -213,6 +191,8 @@ main{
     margin-top: 120px;
     margin-bottom: 120px;
  }
+
+ /*fim da div projects*/
 
  .contact{
     margin-top: 50px;
@@ -257,25 +237,20 @@ main{
     box-shadow: 3px 3px 4px var(--coricons);
 }
 
+/*configuração dos paragrafos do card*/
 .card > p{
     font-family: var(--font002);
     color: var(--cortext002);
     margin-top: 20px;
 
 }
-
+/*configuração das imagens do card*/
 .card > img{
     height: 35px;
     width: 35px;
     
 }
-
-
-
-
-
-
-
+/*configuração dos links do card*/
 .card > p > a{
     text-decoration: none;
     color: var(--cortext002);

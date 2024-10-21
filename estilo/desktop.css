@@ -32,13 +32,9 @@
     --font004:'display';
 }
 
-
-
 #burguer{
     display: none;
 }
-
-
 
 header > nav {
     display: flex;
@@ -53,8 +49,6 @@ ul {
     align-items: center;
     width: 100vw;
     
-   
-   
 }
 
 li > a{
@@ -67,35 +61,35 @@ li > a{
     box-sizing: border-box;
 }
 
-
 .info > h1{
     font-size:3em;
 
-}
-
-.description{
-    width: 70vw;
-    margin: auto;
-    
 }
 
 #role{
     font-size: 1.4em;
     text-align: center;
 }
-
-.card{
+.description{
+    width: 70vw;
+    margin: auto;
     
-    padding-top: 25px;
-    box-shadow: none;
-}
- .card:hover {
-background-color: var(--coricons);
- 
 }
 
 .projects{
     width: 70vw;
 }
+.card{
+    
+    padding-top: 25px;
+    box-shadow: none;
+}
+
+ .card:hover {
+background-color: var(--coricons);
+ 
+}
+
+
 
  

@@ -1,5 +1,6 @@
 @charset "UTF-8";
 
+/*configuração do link do nav*/
 header > nav > a{
     font-size: 1.4em;
 }
@@ -10,27 +11,13 @@ header > nav > a{
 
 }
 
-
-
 .info > h1 {
     font-size: 3em;
 }
 
-
 #role{
     font-size: 1.4em;
 text-align: center;
-}
-
-
-
-.profile > img{
-    width: 300px;
-    height: 300px;
-   
-    
-   
-
 }
 
 .description{
