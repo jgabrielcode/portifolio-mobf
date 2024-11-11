@@ -31,6 +31,12 @@
     --font003:'altone';
     --font004:'display';
 }
+body{
+    background-color: var(--corback); 
+    max-width: 100%;
+   
+    
+}
 
 #burguer{
     display: none;

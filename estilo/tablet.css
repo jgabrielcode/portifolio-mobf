@@ -1,5 +1,12 @@
 @charset "UTF-8";
 
+body{
+    background-color: var(--corback); 
+    max-width: 100%;
+   
+    
+}
+
 /*configuração do link do nav*/
 header > nav > a{
     font-size: 1.4em;
