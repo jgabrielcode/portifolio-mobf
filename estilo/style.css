@@ -55,6 +55,7 @@ COLOQUEI VW NA DISCRIÇAO
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
+    
 }
 
 body{
@@ -112,8 +113,22 @@ main{
     gap: 150px;
     padding: 10px;
 }
+.info > .container{
+    display: flex;
+    justify-content: center;
+}
 
-.info > h1 {
+#name-container {
+    font-size: 2rem;
+    font-weight: bold;
+    overflow: hidden;
+    white-space: nowrap;
+    margin-left: 10px;
+    color: #7d2eeb;
+    font-family: var(--font002);
+  }
+
+.container > h1 {
     font-size: 2.1em;
     font-family: var(--font002);
     color: var(--cortitle);
@@ -121,6 +136,8 @@ main{
     
     
 }
+
+
 
 #role{
    margin-top: 15px;
@@ -246,8 +263,13 @@ main{
 }
 /*configuração das imagens do card*/
 .card > img{
-    height: 35px;
-    width: 35px;
+    height: 45px;
+    width: 45px;
+    
+}
+.card > a > img{
+    height: 45px;
+    width: 45px;
     
 }
 /*configuração dos links do card*/

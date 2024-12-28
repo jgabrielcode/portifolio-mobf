@@ -20,7 +20,6 @@
 
             <ul>
                <li> <a href="#projects">Projetos</a>
-               <li> <a href="#">Design Grafico</a>
                <li> <a href="#contact">Contatos</a>
                <li> <a href="#">Curriculo</a>
             </ul>
@@ -35,7 +34,10 @@
    
     <div class="profile">
             <div class="info">
-                <h1>Olá, eu sou João Gabriel</h1>
+                <div class="container">
+                    <h1>Olá, eu sou</h1><div id="name-container"></div>
+                </div>
+
                 <p id="role">Desenvolvedor front end e Web design</p>
             </div>
     </div>
@@ -125,20 +127,21 @@
 <div class="box">
 
     <div class="card">
-        <img src="img/linkedin-brands-solid.svg" alt="linkedinicon">
-        <p><a href="">LINKEDIN</a></p>
+        <a href="https://linkedin.com/in/jo%C3%A3o-gabriel-de-freitas-costa-652b82261"><img src="img/linkedin-brands-solid.svg" alt="linkedinicon"></a>
+        <p>LINKEDIN</p>
     </div>
 
     <div class="card">
-        <img src="img/github.svg" alt="githubicon">
-        <p><a href="https://github.com/joao619gabrile">GITHUB</a></p>
+        <a href="https://github.com/joao619gabrile"><img src="img/github.svg" alt="githubicon">
+        </a>
+        <p>GITHUB</p>
     </div>
 
     
     <div class="card">
         
-        <img src="img/instagram.svg" alt="instaicon"  >
-        <p><a href="https://www.instagram.com/zbmstudio__/" target="_blank">INSTAGRAM</a></p>
+        <a href="https://www.instagram.com/j_gabrielcode/"><img src="img/instagram.svg" alt="instaicon"  ></a>
+        <p>INSTAGRAM</p>
 </div>
 
 
@@ -164,6 +167,20 @@
         }
 
     }
+
+    const nameContainer = document.getElementById("name-container");
+    const name = "João Gabriel"; // Substitua pelo seu nome
+    let index = 0;
+
+    function typeWriter() {
+    if (index < name.length) {
+    nameContainer.textContent += name[index];
+    index++;
+    setTimeout(typeWriter, 150); // Ajuste o tempo entre as letras
+  }
+}
+
+window.addEventListener("load", typeWriter);
 </script>
     
 </body>
