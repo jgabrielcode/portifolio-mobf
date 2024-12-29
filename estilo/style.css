@@ -119,7 +119,7 @@ main{
 }
 
 #name-container {
-    font-size: 2rem;
+    font-size: 1.8rem;
     font-weight: bold;
     overflow: hidden;
     white-space: nowrap;
@@ -129,7 +129,7 @@ main{
   }
 
 .container > h1 {
-    font-size: 2.1em;
+    font-size: 1.8rem;
     font-family: var(--font002);
     color: var(--cortitle);
     text-align: center;
