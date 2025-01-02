@@ -17,16 +17,6 @@
     src: url(../Fontes/creato_display/CreatoDisplay-Regular.otf) format('opentype');
 }
 
-
-/*
-OBS:
-usar display flex colum
-deixar o texto em cima e a imagem em baixo
-
-*/
-
-
-
 :root{
     --corback:#0D0D0D;
     --corback1:#262626;
@@ -45,7 +35,7 @@ deixar o texto em cima e a imagem em baixo
 --font004:'display';
 
 
-/*COLOQUEI FLEX WARAP NOS CARD DELINGUAGENS PARA FICAR UM EM CIMA DO OUTRO QUANDO A TELA DIMINUIR
+/*COLOQUEI FLEX WARAP NOS CARD DE LINGUAGENS PARA FICAR UM EM CIMA DO OUTRO QUANDO A TELA DIMINUIR
 COLOQUEI VW NA DISCRIÇAO 
 */
 
@@ -55,12 +45,12 @@ COLOQUEI VW NA DISCRIÇAO
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
-    
+    font-size: 62.5%;
 }
 
 body{
     background-color: var(--corback); 
-    max-width: 100vw;
+    
    
     
 }
@@ -89,7 +79,7 @@ header > nav > ul > li > a{
     color: var(--cortext002);
     margin: 15px;
     font-family: var(--font002);
-    font-size: 22px;
+    font-size: 2.2rem;
      
 }
 
@@ -97,6 +87,15 @@ header > nav > ul > li > a{
     list-style: none;
     margin-bottom: 10px;
 }
+
+#resume-btn{
+    
+    background-color: var(--coricons);
+    padding: 0.5rem;
+    border-radius: 5px;
+}
+
+
 
 main{
     padding: 20px;
@@ -119,7 +118,7 @@ main{
 }
 
 #name-container {
-    font-size: 1.8rem;
+    font-size: 3rem;
     font-weight: bold;
     overflow: hidden;
     white-space: nowrap;
@@ -129,19 +128,17 @@ main{
   }
 
 .container > h1 {
-    font-size: 1.8rem;
+
+    font-size: 3rem;
     font-family: var(--font002);
     color: var(--cortitle);
     text-align: center;
-    
-    
+
 }
 
-
-
-#role{
+.info> p{
    margin-top: 15px;
-   font-size: 1.2em;
+   font-size: 2rem;
    text-align: center;
     font-family: var(--font002);
    color: var(--cortext002);
@@ -156,25 +153,31 @@ main{
     background-color: var(--corback1);
     border-radius: 20px;
     box-shadow: 6px 5px 10px var(--coricons);
-    /*border-bottom: 4px solid var(--coricons);*/
+    
 }
 
 .description > h2{
     text-align: center;
-    font-size: 2em;
+    font-size: 3rem;
     font-family: var(--font002);
     color: var(--cortext002);
     margin-left: 15px;
 
 }
 .description > p {
-    font-size: 16px;
+    font-size: 2rem;
     font-family: var(--font002);
     color:var(--cortext002);
+    line-height: 2.5rem;
     
     text-align: justify;
     padding: 20px;
     
+}
+
+span{
+    color: #7d2eeb;
+    font-size: 2rem;
 }
 
 /*Fim da configuração da div descripition*/
@@ -191,22 +194,27 @@ main{
     font-family: var(--font002);
     margin-bottom: 50px;
     color: var(--cortitle);
-    font-size: 1.5em;
+    font-size: 3rem;
     text-align: center;
  }
 /*configuração das div projects onde tera meus projetos*/
  .projects{
-    background-color: var(--corback1);
+    background-color: var(--corback);
     color: var(--cortext002);
     font-family: var(--font002);
-    font-size: 1.5em;
     text-align: center;
-    padding: 10px;
+    padding: 15px;
     border-radius:  20px ;
-    box-shadow: 6px 5px 10px var(--coricons);
+    
     margin: auto;
     margin-top: 120px;
     margin-bottom: 120px;
+
+ }
+
+ .projects > h3{
+    margin-bottom: 30px;
+    font-size: 3rem;
  }
 
  /*fim da div projects*/
@@ -224,7 +232,7 @@ main{
     color: var(--cortitle);
     margin-bottom: 50px;
     font-family: var(--font002);
-    font-size: 1.5em;
+    font-size: 3rem;
  }
 
  /*Configuração card e box*/
@@ -238,9 +246,14 @@ main{
     gap: 12px;
  }
 
+ .box-proj{
+   
+    gap: 30px;
+ }
+
+
 .card{
     background-color: var(--corback1);
-    font-size: 13px;
     padding: 10px;
     height: 120px;
     width: 100px;
@@ -254,17 +267,45 @@ main{
     box-shadow: 3px 3px 4px var(--coricons);
 }
 
+.card-proj {
+    background-color: var(--corback1);
+    box-shadow: none;
+    
+    height: 200px;
+    width: 150px;
+    font-size: 1.3rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center; /*centralizei o conteudo no meio ^ no eixo y*/
+    justify-content: center;/*centralizei o conteudo no meio no eixo x <---->*/
+    
+ }
+
+
 /*configuração dos paragrafos do card*/
+
 .card > p{
     font-family: var(--font002);
+    font-size: 1.4rem;
     color: var(--cortext002);
     margin-top: 20px;
 
 }
+
+.card-proj > h4{
+    font-size: 2rem;
+}
+
+.card-proj > p{
+    font-size: 1.4rem;
+    
+    
+ }
 /*configuração das imagens do card*/
 .card > img{
-    height: 45px;
-    width: 45px;
+    height: 4.5rem;
+    width: 4.5rem;
     
 }
 .card > a > img{
