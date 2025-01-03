@@ -170,7 +170,7 @@ main{
     color:var(--cortext002);
     line-height: 2.5rem;
     
-    text-align: justify;
+    text-align: left;
     padding: 20px;
     
 }
@@ -269,10 +269,10 @@ span{
 
 .card-proj {
     background-color: var(--corback1);
-    box-shadow: none;
+
     
     height: 200px;
-    width: 150px;
+    width: 300px;
     font-size: 1.3rem;
 
     display: flex;
