@@ -302,6 +302,12 @@ span{
     
     
  }
+
+ .card-proj > h4 > a{
+    text-decoration: none;
+    font-size: 2rem;
+    color: var(--cortext002);
+ }
 /*configuração das imagens do card*/
 .card > img{
     height: 4.5rem;
