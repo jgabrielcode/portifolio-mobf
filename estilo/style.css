@@ -50,7 +50,7 @@ COLOQUEI VW NA DISCRIÇAO
 
 body{
     background-color: var(--corback); 
-    
+    overflow-x: hidden;
    
     
 }
@@ -100,7 +100,8 @@ header > nav > ul > li > a{
 main{
     padding: 20px;
     margin: auto;
-    margin-bottom: 150px;
+    
+    
     
 }
 /*div profile onde tera meu nome ao lado esquerdo e um icon ao lado direito*/
@@ -220,10 +221,10 @@ span{
  /*fim da div projects*/
 
  .contact{
-    margin-top: 50px;
+    margin-top: 3rem;
     font-family: var(--font002);
-   background-color: var(--corback);
-   
+    background-color: var(--corback);
+    margin-bottom: 5rem;
  }
 
  .contact > h3{
@@ -233,6 +234,24 @@ span{
     margin-bottom: 50px;
     font-family: var(--font002);
     font-size: 3rem;
+ }
+ /* Inicio da estili9zação do rodape*/
+ footer{
+    color: var(--cortitle);
+    background-color: var(--corback);
+    height: 60px;
+    padding: 20px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+ }
+
+ footer > p {
+    font-size: 2rem;
+    color: var(--cortitle);
+    font-family: var(--font002);
  }
 
  /*Configuração card e box*/
@@ -244,6 +263,7 @@ span{
     justify-content: center;
     flex-wrap: wrap;
     gap: 12px;
+    background-color: var(--corback);
  }
 
  .box-proj{
@@ -329,7 +349,6 @@ span{
 
 /*Fim da configuração da div card e box*/
 
- 
 
 
 
