@@ -249,9 +249,10 @@ span{
  }
 
  footer > p {
-    font-size: 2rem;
+    font-size: 1.6rem;
     color: var(--cortitle);
     font-family: var(--font002);
+    
  }
 
  /*Configuração card e box*/
