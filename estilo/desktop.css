@@ -4,48 +4,52 @@
     font-family: 'soulmaze';
     src: url(../Fontes/made_soulmaze/MADE\ Soulmaze\ Italic\ PERSONAL\ USE.otf) format('opentype');
 }
+
 @font-face {
     font-family: 'Garet';
     src: url(../Fontes/garet/Garet-Book.otf) format('opentype');
 }
+
 @font-face {
     font-family: 'altone';
     src: url(../Fontes/altone/Altone\ Trial-Regular.ttf) format('truetype');
 }
+
 @font-face {
     font-family: 'display';
     src: url(../Fontes/creato_display/CreatoDisplay-Regular.otf) format('opentype');
 }
 
-:root{
-    --corback:#0D0D0D;
-    --corback1:#262626;
-    --cortitle:#F2F2F2;
-    --cortext001:#4B0AA6;
-    --cortext002:#F2F2F2;
-    --coricons:#4B0AA6;
-    --coricons1:#F2E205;
+:root {
+    --corback: #0D0D0D;
+    --corback1: #262626;
+    --cortitle: #F2F2F2;
+    --cortext001: #4B0AA6;
+    --cortext002: #F2F2F2;
+    --coricons: #4B0AA6;
+    --coricons1: #F2E205;
 
-    --font001:'soulmaze';
-    --font002:'Garet';
-    --font003:'altone';
-    --font004:'display';
+    --font001: 'soulmaze';
+    --font002: 'Garet';
+    --font003: 'altone';
+    --font004: 'display';
 }
-body{
-    background-color: var(--corback); 
+
+body {
+    background-color: var(--corback);
     max-width: 100%;
-   
-    
+
+
 }
 
-#burguer{
+#burguer {
     display: none;
 }
 
-header > nav {
+header>nav {
     display: flex;
     justify-content: center;
-   
+
 }
 
 ul {
@@ -54,75 +58,70 @@ ul {
     justify-content: center;
     align-items: center;
     width: 100vw;
-    
+
 }
 
-li > a{
+li>a {
     padding: 10px;
-    
+
 }
 
- li > a:hover{
+li>a:hover {
     border-bottom: 3px solid var(--coricons);
     box-sizing: border-box;
-    
+
 }
 
-#resume-btn:hover{
+#resume-btn:hover {
 
     border-bottom: none;
-   
-    
-}
 
-.info > h1{
-    font-size:3em;
 
 }
 
-#role{
+.info>h1 {
+    font-size: 3em;
+
+}
+
+#role {
     font-size: 1.4em;
     text-align: center;
 }
-.description{
+
+.description {
     width: 70vw;
     margin: auto;
-    
-    
+
+
 }
 
 
 
-.projects{
+.projects {
     width: 70vw;
 }
 
 
-.card{
-    
+.card {
+
     padding-top: 25px;
     box-shadow: none;
 }
 
- .card:hover {
+.card:hover {
     background-color: var(--coricons);
- 
-    margin:0px  20px;
-    transform: scale(1.2) translate(0px , -20px);
+
+    margin: 0px 20px;
+    transform: scale(1.2) translate(0px, -20px);
     transition: 0.8s ease 0.2s;
 }
 
 .card-proj:hover {
-    transform: scale(1.1) translate(0px , -20px);
+    transform: scale(1.1) translate(0px, -20px);
     transition: 0.8s ease 0.2s;
 }
 
-footer > p{
+footer>p {
     font-size: 2rem;
 }
-
-
-
-
-
- 

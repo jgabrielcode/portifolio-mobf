@@ -1,80 +1,88 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="estilo/style.css" media="all" >
+    <link rel="stylesheet" href="estilo/style.css" media="all">
     <link rel="stylesheet" href="estilo/desktop.css" media="(min-width: 1020px)">
 
     <link rel="stylesheet" href="estilo/tablet.css" media="(min-width: 768px)">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=menu" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=menu" />
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
     <title>Meu Portifólio</title>
 </head>
+
 <body onresize="mudouTamanho()">
     <header>
-     <span id="burguer" class="material-symbols-outlined" onclick="clickMenu()" >
+        <span id="burguer" class="material-symbols-outlined" onclick="clickMenu()">
             menu
-            </span>
+        </span>
         <nav id="menu">
 
             <ul>
-               <li> <a href="#projects">Projetos</a>
-               <li> <a href="#contact">Contatos</a>
-               <li> <a id="resume-btn"  href="cv-joaogabriel.pdf" download="joao-gabriel-curriculo" target="_blank" >Curriculo</a>
+                <li> <a href="#projects">Projetos</a>
+                <li> <a href="#contact">Contatos</a>
+                <li> <a id="resume-btn" href="cv-joaogabriel.pdf" download="joao-gabriel-curriculo"
+                        target="_blank">Curriculo</a>
             </ul>
 
         </nav>
-    
-
-</header>
 
 
-<main>
-   
-    <div class="profile">
+    </header>
+
+
+    <main>
+
+        <div class="profile">
             <div class="info">
                 <div class="container">
-                    <h1>Olá, eu sou</h1><div id="name-container"></div>
+                    <h1>Olá, eu sou</h1>
+                    <div id="name-container"></div>
                 </div>
 
                 <p>Desenvolvedor front-end junior</p>
                 <p>São Paulo, Brasil</p>
             </div>
-    </div>
-    
-        <div class="description">
-            
-                <h2>SOBRE MIM</h2>
-                <p>Bem-vindo ao meu portfólio! Sou um desenvolvedor front-end apaixonado por tecnologia e programação, com uma base sólida em <span>HTML5, CSS e JavaScript.</span> </br>
-                Recentemente, desenvolvi um portfólio pessoal para colocar em prática e demonstrar um pouco do meu conhecimento técnico. Este projeto reflete meu compromisso em criar interfaces modernas,funcionais e responsivas, além de mostrar minha vontade de aprender e evoluir constantemente.
-                </p>
-        
         </div>
-    
 
-    <div class="lenguages">
+        <div class="description">
 
-        <h3>LINGUAGENS</h3>
+            <h2>SOBRE MIM</h2>
+            <p>Bem-vindo ao meu portfólio! Sou um desenvolvedor front-end apaixonado por tecnologia e programação, com
+                uma base sólida em <span>HTML5, CSS e JavaScript.</span> </br>
+                Recentemente, desenvolvi um portfólio pessoal para colocar em prática e demonstrar um pouco do meu
+                conhecimento técnico. Este projeto reflete meu compromisso em criar interfaces modernas,funcionais e
+                responsivas, além de mostrar minha vontade de aprender e evoluir constantemente.
+            </p>
 
-        <div class="box">   
-               
-            <div class="card">
-               
+        </div>
+
+
+        <div class="lenguages">
+
+            <h3>LINGUAGENS</h3>
+
+            <div class="box">
+
+                <div class="card">
+
                     <img src="img/css3-alt.svg" alt="cssicon">
-                     <p>CSS3</p>
-                </div>
-        
-                <div class="card"> 
-                    
-                    <img src="img/html5 (1).svg" alt="htmlicon">
-                   <p>HTML</p>
+                    <p>CSS3</p>
                 </div>
 
-                <div class="card"> 
-                    
+                <div class="card">
+
+                    <img src="img/html5 (1).svg" alt="htmlicon">
+                    <p>HTML</p>
+                </div>
+
+                <div class="card">
+
                     <img src="img/js (1).svg" alt="javaicon">
-                   <p>JAVASCRIPT</p>
+                    <p>JAVASCRIPT</p>
                 </div>
 
                 <div class="card">
@@ -84,7 +92,7 @@
 
                 </div>
 
-                <div class="card"> 
+                <div class="card">
                     <img src="img/node-js-brands-solid.svg" alt="icone do node js">
                     <p>NODE JS</p>
                 </div>
@@ -94,112 +102,115 @@
                     <p>GIT</p>
                 </div>
 
-            
-        </div> 
-
-    </div>
-
-    <div  class="projects">
-
-        <h3>PROJETOS</h3>
-
-        <div class="box box-proj">
-
-            <div class="card card-proj">
-
-                <h4>Pokedex</h4>
-                <p>HTML5 | CSS3  </br>
-                     JAVASCRIPT</p>
 
             </div>
-            <div class="card card-proj">
-
-                <h4><a href="https://joao619gabrile.github.io/clock/">Relogio</a></h4>
-                <p>HTML5 | CSS3  </br>
-                    JAVASCRIPT</p>
-
-            </div>
-            <div class="card card-proj">
-                <h4><a href="https://joao619gabrile.github.io/elevate-fitnes/" target="_blank">Landing Page GYM</a></h4>
-                <p>HTML5 | CSS3 </p>
-            </div>
-            
-            </div>
-            
-            
 
         </div>
-            
-    </div>
+
+        <div class="projects">
+
+            <h3>PROJETOS</h3>
+
+            <div class="box box-proj">
+
+                <div class="card card-proj">
+
+                    <h4>Pokedex</h4>
+                    <p>HTML5 | CSS3 </br>
+                        JAVASCRIPT</p>
+
+                </div>
+                <div class="card card-proj">
+
+                    <h4><a href="https://joao619gabrile.github.io/clock/">Relogio</a></h4>
+                    <p>HTML5 | CSS3 </br>
+                        JAVASCRIPT</p>
+
+                </div>
+                <div class="card card-proj">
+                    <h4><a href="https://joao619gabrile.github.io/elevate-fitnes/" target="_blank">Landing Page GYM</a>
+                    </h4>
+                    <p>HTML5 | CSS3 </p>
+                </div>
+
+            </div>
 
 
-<div id="contact" class="contact" > 
 
-    <h3>CONTATOS</h3>
+        </div>
 
-<div class="box">
-
-    <div class="card">
-        <a href="https://linkedin.com/in/jo%C3%A3o-gabriel-de-freitas-costa-652b82261"><img src="img/linkedin-brands-solid.svg" alt="linkedinicon"></a>
-        <p>LINKEDIN</p>
-    </div>
-
-    <div class="card">
-        <a href="https://github.com/joao619gabrile"><img src="img/github.svg" alt="githubicon">
-        </a>
-        <p>GITHUB</p>
-    </div>
-
-    
-    <div class="card">
-        
-        <a href="https://www.instagram.com/j_gabrielcode/"><img src="img/instagram.svg" alt="instaicon"  ></a>
-        <p>INSTAGRAM</p>
-</div>
+        </div>
 
 
-</div>
+        <div id="contact" class="contact">
+
+            <h3>CONTATOS</h3>
+
+            <div class="box">
+
+                <div class="card">
+                    <a href="https://linkedin.com/in/jo%C3%A3o-gabriel-de-freitas-costa-652b82261"><img
+                            src="img/linkedin-brands-solid.svg" alt="linkedinicon"></a>
+                    <p>LINKEDIN</p>
+                </div>
+
+                <div class="card">
+                    <a href="https://github.com/joao619gabrile"><img src="img/github.svg" alt="githubicon">
+                    </a>
+                    <p>GITHUB</p>
+                </div>
 
 
-</main>
-<footer>
-    <p>
-        © 2025 João Gabriel.All rights reserved.
-    </p>
-</footer>
-<script>
+                <div class="card">
 
-    function mudouTamanho(){
-        if (window.innerWidth >= 1020){
-            menu.style.display ='block'
-        }else{
-            menu.style.display = 'none'
+                    <a href="https://www.instagram.com/j_gabrielcode/"><img src="img/instagram.svg" alt="instaicon"></a>
+                    <p>INSTAGRAM</p>
+                </div>
+
+
+            </div>
+
+
+    </main>
+    <footer>
+        <p>
+            © 2025 João Gabriel.All rights reserved.
+        </p>
+    </footer>
+    <script>
+
+        function mudouTamanho() {
+            if (window.innerWidth >= 1020) {
+                menu.style.display = 'block'
+            } else {
+                menu.style.display = 'none'
+            }
         }
-    }
 
-    function clickMenu(){
-        if (menu.style.display == 'block') {
-         menu.style.display = 'none';
-        } else {
-            menu.style.display ='block';
+        function clickMenu() {
+            if (menu.style.display == 'block') {
+                menu.style.display = 'none';
+            } else {
+                menu.style.display = 'block';
+            }
+
         }
 
-    }
+        const nameContainer = document.getElementById("name-container");
+        const name = "João Gabriel"; // Substitua pelo seu nome
+        let index = 0;
 
-    const nameContainer = document.getElementById("name-container");
-    const name = "João Gabriel"; // Substitua pelo seu nome
-    let index = 0;
+        function typeWriter() {
+            if (index < name.length) {
+                nameContainer.textContent += name[index];
+                index++;
+                setTimeout(typeWriter, 150); // Ajuste o tempo entre as letras
+            }
+        }
 
-    function typeWriter() {
-    if (index < name.length) {
-    nameContainer.textContent += name[index];
-    index++;
-    setTimeout(typeWriter, 150); // Ajuste o tempo entre as letras
-  }
-}
+        window.addEventListener("load", typeWriter);
+    </script>
 
-window.addEventListener("load", typeWriter);
-</script>
-    
 </body>
+
 </html>

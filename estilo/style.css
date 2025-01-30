@@ -4,92 +4,98 @@
     font-family: 'soulmaze';
     src: url(../Fontes/made_soulmaze/MADE\ Soulmaze\ Italic\ PERSONAL\ USE.otf) format('opentype');
 }
+
 @font-face {
     font-family: 'Garet';
     src: url(../Fontes/garet/Garet-Book.otf) format('opentype');
 }
+
 @font-face {
     font-family: 'altone';
     src: url(../Fontes/altone/Altone\ Trial-Regular.ttf) format('truetype');
 }
+
 @font-face {
     font-family: 'display';
     src: url(../Fontes/creato_display/CreatoDisplay-Regular.otf) format('opentype');
 }
 
-:root{
-    --corback:#0D0D0D;
-    --corback1:#262626;
-    --cortitle:#F2F2F2;
-    --cortext001:#4B0AA6;
-    --cortext002:#F2F2F2;
-    --coricons:#4B0AA6;
-    --coricons1:#F2E205;
-    
-    
+:root {
+    --corback: #0D0D0D;
+    --corback1: #262626;
+    --cortitle: #F2F2F2;
+    --cortext001: #4B0AA6;
+    --cortext002: #F2F2F2;
+    --coricons: #4B0AA6;
+    --coricons1: #F2E205;
 
 
---font001:'soulmaze';
---font002:'Garet';
---fonttitle:'montserrat';
---font004:'display';
 
 
-/*COLOQUEI FLEX WARAP NOS CARD DE LINGUAGENS PARA FICAR UM EM CIMA DO OUTRO QUANDO A TELA DIMINUIR
+    --font001: 'soulmaze';
+    --font002: 'Garet';
+    --fonttitle: 'montserrat';
+    --font004: 'display';
+
+
+    /*COLOQUEI FLEX WARAP NOS CARD DE LINGUAGENS PARA FICAR UM EM CIMA DO OUTRO QUANDO A TELA DIMINUIR
 COLOQUEI VW NA DISCRIÇAO 
 */
 
 }
 
-*{
+* {
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
     font-size: 62.5%;
 }
 
-body{
-    background-color: var(--corback); 
+body {
+    background-color: var(--corback);
     overflow-x: hidden;
-   
-    
+
+
 }
-header{
+
+header {
     padding: 15px;
-   
+
 }
+
 /*Fazer um menu Hamburguer no nav*/
-#burguer{
+#burguer {
     display: block;
     color: #F2F2F2;
     text-align: center;
     cursor: pointer;
 }
-header > nav{
+
+header>nav {
     display: none;
     margin: auto;
     margin-top: 25px;
     text-align: center;
     font-family: var(--font004);
-    
+
 }
 
-header > nav > ul > li > a{
+header>nav>ul>li>a {
     text-decoration: none;
     color: var(--cortext002);
     margin: 15px;
     font-family: var(--font002);
     font-size: 2.2rem;
-     
+
 }
 
- ul > li  {
+ul>li {
     list-style: none;
     margin-bottom: 10px;
 }
 
-#resume-btn{
-    
+#resume-btn {
+
     background-color: var(--coricons);
     padding: 0.5rem;
     border-radius: 5px;
@@ -97,23 +103,25 @@ header > nav > ul > li > a{
 
 
 
-main{
+main {
     padding: 20px;
     margin: auto;
-    
-    
-    
+
+
+
 }
+
 /*div profile onde tera meu nome ao lado esquerdo e um icon ao lado direito*/
-.profile{
+.profile {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom:20px ;
+    margin-bottom: 20px;
     gap: 150px;
     padding: 10px;
 }
-.info > .container{
+
+.info>.container {
     display: flex;
     justify-content: center;
 }
@@ -126,9 +134,9 @@ main{
     margin-left: 10px;
     color: #7d2eeb;
     font-family: var(--font002);
-  }
+}
 
-.container > h1 {
+.container>h1 {
 
     font-size: 3rem;
     font-family: var(--font002);
@@ -137,27 +145,27 @@ main{
 
 }
 
-.info> p{
-   margin-top: 15px;
-   font-size: 2rem;
-   text-align: center;
+.info>p {
+    margin-top: 15px;
+    font-size: 2rem;
+    text-align: center;
     font-family: var(--font002);
-   color: var(--cortext002);
-   
+    color: var(--cortext002);
+
 }
 
 /*Configuraçoes da div descripition onde terá uma breve descrição sobre mim
 */
-.description{
+.description {
     padding: 15px;
     margin-top: 50px;
     background-color: var(--corback1);
     border-radius: 20px;
     box-shadow: 6px 5px 10px var(--coricons);
-    
+
 }
 
-.description > h2{
+.description>h2 {
     text-align: center;
     font-size: 3rem;
     font-family: var(--font002);
@@ -165,18 +173,19 @@ main{
     margin-left: 15px;
 
 }
-.description > p {
+
+.description>p {
     font-size: 2rem;
     font-family: var(--font002);
-    color:var(--cortext002);
+    color: var(--cortext002);
     line-height: 2.5rem;
-    
+
     text-align: left;
     padding: 20px;
-    
+
 }
 
-span{
+span {
     color: #7d2eeb;
     font-size: 2rem;
 }
@@ -184,59 +193,61 @@ span{
 /*Fim da configuração da div descripition*/
 
 /*inicio da configuração da div lenguages*/
-.lenguages{
+.lenguages {
     color: var(--cortext001);
-    background-color:  var(--corback);
+    background-color: var(--corback);
     margin-top: 50px;
- }
+}
 
- .lenguages > h3{
-    
+.lenguages>h3 {
+
     font-family: var(--font002);
     margin-bottom: 50px;
     color: var(--cortitle);
     font-size: 3rem;
     text-align: center;
- }
+}
+
 /*configuração das div projects onde tera meus projetos*/
- .projects{
+.projects {
     background-color: var(--corback);
     color: var(--cortext002);
     font-family: var(--font002);
     text-align: center;
     padding: 15px;
-    border-radius:  20px ;
-    
+    border-radius: 20px;
+
     margin: auto;
     margin-top: 120px;
     margin-bottom: 120px;
 
- }
+}
 
- .projects > h3{
+.projects>h3 {
     margin-bottom: 30px;
     font-size: 3rem;
- }
+}
 
- /*fim da div projects*/
+/*fim da div projects*/
 
- .contact{
+.contact {
     margin-top: 3rem;
     font-family: var(--font002);
     background-color: var(--corback);
     margin-bottom: 5rem;
- }
+}
 
- .contact > h3{
+.contact>h3 {
 
     text-align: center;
     color: var(--cortitle);
     margin-bottom: 50px;
     font-family: var(--font002);
     font-size: 3rem;
- }
- /* Inicio da estili9zação do rodape*/
- footer{
+}
+
+/* Inicio da estili9zação do rodape*/
+footer {
     color: var(--cortitle);
     background-color: var(--corback);
     height: 60px;
@@ -246,34 +257,34 @@ span{
     justify-content: center;
     align-items: center;
 
- }
+}
 
- footer > p {
+footer>p {
     font-size: 1.6rem;
     color: var(--cortitle);
     font-family: var(--font002);
-    
- }
 
- /*Configuração card e box*/
+}
 
-.box{
-    background-color:var(--corback);
+/*Configuração card e box*/
+
+.box {
+    background-color: var(--corback);
     padding: 20px;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     gap: 12px;
     background-color: var(--corback);
- }
+}
 
- .box-proj{
-   
+.box-proj {
+
     gap: 30px;
- }
+}
 
 
-.card{
+.card {
     background-color: var(--corback1);
     padding: 10px;
     height: 120px;
@@ -282,8 +293,10 @@ span{
     /*configuração para centralizar a imagem e o texto*/
     display: flex;
     flex-direction: column;
-    align-items: center; /*centralizei o conteudo no meio ^ no eixo y*/
-    justify-content: center;/*centralizei o conteudo no meio no eixo x <---->*/
+    align-items: center;
+    /*centralizei o conteudo no meio ^ no eixo y*/
+    justify-content: center;
+    /*centralizei o conteudo no meio no eixo x <---->*/
     border-radius: 40px 0px 20px 0px;
     box-shadow: 3px 3px 4px var(--coricons);
 }
@@ -291,22 +304,24 @@ span{
 .card-proj {
     background-color: var(--corback1);
 
-    
+
     height: 200px;
     width: 300px;
     font-size: 1.3rem;
 
     display: flex;
     flex-direction: column;
-    align-items: center; /*centralizei o conteudo no meio ^ no eixo y*/
-    justify-content: center;/*centralizei o conteudo no meio no eixo x <---->*/
-    
- }
+    align-items: center;
+    /*centralizei o conteudo no meio ^ no eixo y*/
+    justify-content: center;
+    /*centralizei o conteudo no meio no eixo x <---->*/
+
+}
 
 
 /*configuração dos paragrafos do card*/
 
-.card > p{
+.card>p {
     font-family: var(--font002);
     font-size: 1.4rem;
     color: var(--cortext002);
@@ -314,43 +329,41 @@ span{
 
 }
 
-.card-proj > h4{
+.card-proj>h4 {
     font-size: 2rem;
 }
 
-.card-proj > p{
+.card-proj>p {
     font-size: 1.4rem;
-    
-    
- }
 
- .card-proj > h4 > a{
+
+}
+
+.card-proj>h4>a {
     text-decoration: none;
     font-size: 2rem;
     color: var(--cortext002);
- }
+}
+
 /*configuração das imagens do card*/
-.card > img{
+.card>img {
     height: 4.5rem;
     width: 4.5rem;
-    
+
 }
-.card > a > img{
+
+.card>a>img {
     height: 45px;
     width: 45px;
-    
+
 }
+
 /*configuração dos links do card*/
-.card > p > a{
+.card>p>a {
     text-decoration: none;
     color: var(--cortext002);
 }
- 
+
 
 
 /*Fim da configuração da div card e box*/
-
-
-
-
- 
