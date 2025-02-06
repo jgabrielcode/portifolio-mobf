@@ -36,7 +36,6 @@
 }
 
 body {
-    background-color: var(--corback);
     max-width: 100%;
 
 
@@ -49,6 +48,7 @@ body {
 header>nav {
     display: flex;
     justify-content: center;
+    padding: 10px;
 
 }
 
@@ -57,7 +57,7 @@ ul {
     gap: 10px;
     justify-content: center;
     align-items: center;
-    width: 100vw;
+    
 
 }
 

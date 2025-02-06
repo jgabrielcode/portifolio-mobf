@@ -28,6 +28,7 @@
     --cortext002: #F2F2F2;
     --coricons: #4B0AA6;
     --coricons1: #F2E205;
+    --teste:background-image: linear-gradient(to right top, #000000, #161415, #242124, #322f34, #3e3e46, #434555, #454d65, #455575, #445585, #495394, #554fa0, #6649aa);;
 
 
 
@@ -52,7 +53,7 @@ COLOQUEI VW NA DISCRIÇAO
 }
 
 body {
-    background-color: var(--corback);
+    background-color: var(--corback); 
     overflow-x: hidden;
 
 
@@ -195,7 +196,6 @@ span {
 /*inicio da configuração da div lenguages*/
 .lenguages {
     color: var(--cortext001);
-    background-color: var(--corback);
     margin-top: 50px;
 }
 
@@ -210,7 +210,6 @@ span {
 
 /*configuração das div projects onde tera meus projetos*/
 .projects {
-    background-color: var(--corback);
     color: var(--cortext002);
     font-family: var(--font002);
     text-align: center;
@@ -233,7 +232,6 @@ span {
 .contact {
     margin-top: 3rem;
     font-family: var(--font002);
-    background-color: var(--corback);
     margin-bottom: 5rem;
 }
 
@@ -269,13 +267,13 @@ footer>p {
 /*Configuração card e box*/
 
 .box {
-    background-color: var(--corback);
+    
     padding: 20px;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     gap: 12px;
-    background-color: var(--corback);
+    
 }
 
 .box-proj {
