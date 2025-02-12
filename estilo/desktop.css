@@ -35,93 +35,42 @@
     --font004: 'display';
 }
 
-body {
-    max-width: 100%;
+body {max-width: 100%;}
 
+#burguer {display: none;}
 
-}
+header>nav {display: flex; justify-content: center;padding: 10px;}
 
-#burguer {
-    display: none;
-}
+ul {display: flex;gap: 10px;justify-content: center;align-items: center;}
 
-header>nav {
-    display: flex;
-    justify-content: center;
-    padding: 10px;
+li>a {padding: 10px;}
 
-}
+li>a:hover {border-bottom: 3px solid var(--coricons); box-sizing: border-box;}
+/*Botão de dowload curriculum*/
+#resume-btn:hover {border-bottom: none;}
 
-ul {
-    display: flex;
-    gap: 10px;
-    justify-content: center;
-    align-items: center;
-    
+.info>h1 {font-size: 3em;}
+/*estilo da descrição sobre mim*/
+.description {width: 70vw;margin: auto;}
 
-}
+.projects {width: 70vw;}
 
-li>a {
-    padding: 10px;
-
-}
-
-li>a:hover {
-    border-bottom: 3px solid var(--coricons);
-    box-sizing: border-box;
-
-}
-
-#resume-btn:hover {
-
-    border-bottom: none;
-
-
-}
-
-.info>h1 {
-    font-size: 3em;
-
-}
-
-#role {
-    font-size: 1.4em;
-    text-align: center;
-}
-
-.description {
-    width: 70vw;
-    margin: auto;
-
-
-}
-
-
-
-.projects {
-    width: 70vw;
-}
-
-
-.card {
-
-    padding-top: 25px;
-    box-shadow: none;
-}
+/*configuração dos cards em geral*/
+.card {padding-top: 25px;box-shadow: none;}
 
 .card:hover {
     background-color: var(--coricons);
-
     margin: 0px 20px;
     transform: scale(1.2) translate(0px, -20px);
     transition: 0.8s ease 0.2s;
 }
-
+/*Configuração dohover dos card's dos projetos*/
 .card-proj:hover {
     transform: scale(1.1) translate(0px, -20px);
     transition: 0.8s ease 0.2s;
 }
 
+/*Configuração tamnho da fonte do footer*/
 footer>p {
     font-size: 2rem;
 }

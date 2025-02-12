@@ -21,11 +21,8 @@ body {
     justify-content: center;
     align-items: center;
 }
-#txt{
-    color: white;
-    transform: translate(-100px,-20px);
-    
-}
+#txt{color: white;transform: translate(-100px,-20px);}
+
 #txt>h1{
     font-size: 4rem;
     text-align: center;

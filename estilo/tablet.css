@@ -1,35 +1,12 @@
 @charset "UTF-8";
 
-body{
-    max-width: 100%;
-   
-    
-}
+body{ max-width: 100%;}
 
 /*configuração do link do nav*/
-header > nav > a{
-    font-size: 1.4em;
-}
+header > nav > a{font-size: 1.4em;}
 
-
-.box{
-    justify-content: center;
-
-}
-
-
-
-.info > h1 {
-    font-size: 3em;
-}
-
-#role{
-    font-size: 1.4em;
-text-align: center;
-}
-
-.description{
-    width: 70vw;
-    margin: auto;
-    
-}
+.box{justify-content: center;}
+/*Estilo da apresentação (olá, eu sou)*/
+.info > h1 {font-size: 3em;}
+/*Estilo da descrição sobre mim*/
+.description{width: 70vw;margin: auto;}
