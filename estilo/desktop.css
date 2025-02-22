@@ -33,7 +33,7 @@ li>a:hover {border-bottom: 3px solid var(--coricons); box-sizing: border-box;}
 
 .info>h1 {font-size: 3em;}
 /*estilo da descrição sobre mim*/
-.description {width: 70vw; margin: auto; }
+.description {width: 70vw; }
 
 .projects {width: 70vw; padding: 50px;}
 .lenguages{margin-top: 120px;}

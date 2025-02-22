@@ -176,7 +176,7 @@ span {color: #f5dd06;font-size: 2rem; font-weight: bolder;}/*mudança da cor do 
 
     margin: auto;
     margin-top: 120px;
-    margin-bottom: 120px;
+    margin-bottom: 60px;
 
 }
 
@@ -185,7 +185,6 @@ span {color: #f5dd06;font-size: 2rem; font-weight: bolder;}/*mudança da cor do 
 /*fim da div projects*/
 
 .contact {
-    margin-top: 3rem;
     font-family: var(--fontPrincipal);
     margin-bottom: 5rem;
 }
