@@ -1,38 +1,20 @@
 @charset "UTF-8";
 
 @font-face {
-    font-family: 'soulmaze';
-    src: url(../Fontes/made_soulmaze/MADE\ Soulmaze\ Italic\ PERSONAL\ USE.otf) format('opentype');
-}
-
-@font-face {
     font-family: 'Garet';
     src: url(../Fontes/garet/Garet-Book.otf) format('opentype');
 }
 
-@font-face {
-    font-family: 'altone';
-    src: url(../Fontes/altone/Altone\ Trial-Regular.ttf) format('truetype');
-}
-
-@font-face {
-    font-family: 'display';
-    src: url(../Fontes/creato_display/CreatoDisplay-Regular.otf) format('opentype');
-}
 
 :root {
     --corback: #0D0D0D;
-    --corback1: #262626;
-    --cortitle: #F2F2F2;
-    --cortext001: #4B0AA6;
+    --corback: #fff;
+    --corbackcards: #0424D9;
+    --cortitle: #000000;
+    --cortext001: #000;
     --cortext002: #F2F2F2;
-    --coricons: #4B0AA6;
+    --coricons: #0424D9;
     --coricons1: #F2E205;
-
-    --font001: 'soulmaze';
-    --font002: 'Garet';
-    --font003: 'altone';
-    --font004: 'display';
 }
 
 body {max-width: 100%;}
@@ -55,7 +37,7 @@ li>a:hover {border-bottom: 3px solid var(--coricons); box-sizing: border-box;}
 
 .projects {width: 70vw;}
 
-/*configuração dos cards em geral*/
+/*configuração de todos cards */
 .card {padding-top: 25px;box-shadow: none;}
 
 .card:hover {
@@ -64,13 +46,13 @@ li>a:hover {border-bottom: 3px solid var(--coricons); box-sizing: border-box;}
     transform: scale(1.2) translate(0px, -20px);
     transition: 0.8s ease 0.2s;
 }
-/*Configuração dohover dos card's dos projetos*/
+/*Configuração do hover nos card's dos projetos*/
 .card-proj:hover {
     transform: scale(1.1) translate(0px, -20px);
     transition: 0.8s ease 0.2s;
 }
 
-/*Configuração tamnho da fonte do footer*/
+/*Configuração tamanho da fonte do footer*/
 footer>p {
     font-size: 2rem;
 }

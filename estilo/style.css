@@ -1,44 +1,29 @@
 @charset "UTF-8";
 
 @font-face {
-    font-family: 'soulmaze';
-    src: url(../Fontes/made_soulmaze/MADE\ Soulmaze\ Italic\ PERSONAL\ USE.otf) format('opentype');
-}
-
-@font-face {
     font-family: 'Garet';
     src: url(../Fontes/garet/Garet-Book.otf) format('opentype');
 }
-
 @font-face {
-    font-family: 'altone';
-    src: url(../Fontes/altone/Altone\ Trial-Regular.ttf) format('truetype');
+    font-family: 'IBMPlexMono';
+    src: url(../fontes/IBM_Plex_Mono/IBMPlexMono-Regular.ttf) format('truetype');
 }
 
-@font-face {
-    font-family: 'display';
-    src: url(../Fontes/creato_display/CreatoDisplay-Regular.otf) format('opentype');
-}
+
+
 
 :root {
-    --corback: #0D0D0D;
-    --corback1: #262626;
-    --cortitle: #F2F2F2;
-    --cortext001: #4B0AA6;
+    --corback: #fff;
+    --corbackcards: #0424D9;
+    --cortitle: #000000;
+    --cortext001: #000;
     --cortext002: #F2F2F2;
-    --coricons: #4B0AA6;
+    --coricons: #0424D9;
     --coricons1: #F2E205;
-    --teste:linear-gradient(to right top, #000000, #161415, #242124, #322f34, #3e3e46, #434555, #454d65, #455575, #445585, #495394, #554fa0, #6649aa);
 
-
-
-
-    --font001: 'soulmaze';
-    --font002: 'Garet';
-    --fonttitle: 'montserrat';
-    --font004: 'display';
-
-
+    --fontPrincipal:'Garet' ,sans-serif;
+    --fontAlternative:'IBMPlexMono'
+    
 /*COLOQUEI FLEX WARAP NOS CARD DE LINGUAGENS PARA FICAR UM EM CIMA DO OUTRO 
 QUANDO A TELA DIMINUIR
 */
@@ -58,7 +43,7 @@ header {padding: 15px;}
 /*menu hamburger*/
 #burguer {
     display: block;
-    color: #F2F2F2;
+    color: #000000;
     text-align: center;
     cursor: pointer;
 }
@@ -68,14 +53,14 @@ header>nav {
     margin: auto;
     margin-top: 25px;
     text-align: center;
-    font-family: var(--font004);
+    font-family: var(--fontPrincipal);
 }
 
 header>nav>ul>li>a {
     text-decoration: none;
-    color: var(--cortext002);
+    color: var(--cortext001);
     margin: 15px;
-    font-family: var(--font002);
+    font-family: var(--fontPrincipal);
     font-size: 2.2rem;
 
 }
@@ -84,7 +69,8 @@ ul>li {list-style: none;margin-bottom: 10px;}
  
 /*Botao de dowload do curriculum*/
 #resume-btn {
-    background-color: var(--coricons);
+    background-color: var(--corbackcards);
+    color: #fff;
     padding: 0.5rem;
     border-radius: 5px;
 }
@@ -114,15 +100,15 @@ minha areá de atuação*/
     overflow: hidden;
     white-space: nowrap;
     margin-left: 10px;
-    color: #7d2eeb;
-    font-family: var(--font002);
+    color: var(--corbackcards);
+    font-family: var(--fontPrincipal);
 }
 
 .container>h1 {
 
     font-size: 3rem;
-    font-family: var(--font002);
-    color: var(--cortitle);
+    font-family: var(--fontPrincipal);
+    color: var(--cortext001);
     text-align: center;
 
 }
@@ -131,8 +117,8 @@ minha areá de atuação*/
     margin-top: 15px;
     font-size: 2rem;
     text-align: center;
-    font-family: var(--font002);
-    color: var(--cortext002);
+    font-family: var(--fontPrincipal);
+    color: var(--cortext001);
 
 }
 
@@ -141,7 +127,7 @@ minha areá de atuação*/
 .description {
     padding: 15px;
     margin-top: 50px;
-    background-color: var(--corback1);
+    background-color: var(--corbackcards);
     border-radius: 20px;
     box-shadow: 6px 5px 10px var(--coricons);
 
@@ -150,21 +136,21 @@ minha areá de atuação*/
 .description>h2 {
     text-align: center;
     font-size: 3rem;
-    font-family: var(--font002);
+    font-family: var(--fontPrincipal);
     color: var(--cortext002);
     margin-left: 15px;
 }
 
 .description>p {
     font-size: 2rem;
-    font-family: var(--font002);
+    font-family: var(--fontPrincipal);
     color: var(--cortext002);
     line-height: 2.5rem;
     text-align: left;
     padding: 20px;
 }
 
-span {color: #7d2eeb;font-size: 2rem;}/*mudança da cor do texto*/
+span {color: #f5dd06;font-size: 2rem; font-weight: bolder;}/*mudança da cor do texto*/
 
 /*Fim da configuração da div descripition*/
 
@@ -173,7 +159,7 @@ span {color: #7d2eeb;font-size: 2rem;}/*mudança da cor do texto*/
 
 .lenguages>h3 {
 
-    font-family: var(--font002);
+    font-family: var(--fontPrincipal);
     margin-bottom: 50px;
     color: var(--cortitle);
     font-size: 3rem;
@@ -182,8 +168,8 @@ span {color: #7d2eeb;font-size: 2rem;}/*mudança da cor do texto*/
 
 /*configuração das div projects onde tera meus projetos*/
 .projects {
-    color: var(--cortext002);
-    font-family: var(--font002);
+    color: var(--cortitle);
+    font-family: var(--fontPrincipal);
     text-align: center;
     padding: 15px;
     border-radius: 20px;
@@ -200,7 +186,7 @@ span {color: #7d2eeb;font-size: 2rem;}/*mudança da cor do texto*/
 
 .contact {
     margin-top: 3rem;
-    font-family: var(--font002);
+    font-family: var(--fontPrincipal);
     margin-bottom: 5rem;
 }
 
@@ -209,7 +195,7 @@ span {color: #7d2eeb;font-size: 2rem;}/*mudança da cor do texto*/
     text-align: center;
     color: var(--cortitle);
     margin-bottom: 50px;
-    font-family: var(--font002);
+    font-family: var(--fontPrincipal);
     font-size: 3rem;
 }
 
@@ -229,7 +215,7 @@ footer {
 footer>p {
     font-size: 1.6rem;
     color: var(--cortitle);
-    font-family: var(--font002);
+    font-family: var(--fontPrincipal);
 
 }
 
@@ -248,7 +234,7 @@ footer>p {
 .box-proj {gap: 30px;}
 
 .card {
-    background-color: var(--corback1);
+    background-color: var(--corbackcards);
     padding: 10px;
     height: 120px;
     width: 100px;
@@ -265,7 +251,7 @@ footer>p {
 }
 
 .card-proj {
-    background-color: var(--corback1);
+    background-color: var(--corbackcards);
 
     height: 200px;
     width: 300px;
@@ -281,7 +267,7 @@ footer>p {
 }
 
 .card>p {/*configuração dos paragrafos do card*/
-    font-family: var(--font002);
+    font-family: var(--fontPrincipal);
     font-size: 1.4rem;
     color: var(--cortext002);
     margin-top: 20px;
