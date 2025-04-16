@@ -31,7 +31,7 @@ li>a:hover {border-bottom: 3px solid var(--coricons); box-sizing: border-box;}
 /*Botão de dowload curriculum*/
 #resume-btn:hover {border-bottom: none;}
 
-.info>h1 {font-size: 3em;}
+.info>h1 {font-size: 3rem;}
 /*estilo da descrição sobre mim*/
 .description {width: 70vw; }
 
