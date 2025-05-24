@@ -174,14 +174,14 @@
         }
 
         const nameContainer = document.getElementById("name-container");
-        const name = "João Gabriel"; // Substitua pelo seu nome
+        const name = "João Gabriel";
         let index = 0;
 
         function typeWriter() {
             if (index < name.length) {
                 nameContainer.textContent += name[index];
                 index++;
-                setTimeout(typeWriter, 150); // Ajuste o tempo entre as letras
+                setTimeout(typeWriter, 100); // Ajuste o tempo entre as letras
             }
         }
 
