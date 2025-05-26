@@ -72,7 +72,11 @@ header>nav>ul>li>a {
 }
 
 ul>li {list-style: none;margin-bottom: 30px;}
- 
+
+#resume-btn{
+    background-color: var(--corbackcards1);
+    color: var(--cortext001);
+}
 
 main{
     padding: 2rem;
