@@ -1,5 +1,5 @@
 @charset "UTF-8";
-
+/*TODO: Organizar codigo*/
 @font-face {
     font-family: 'Garet';
     src: url(../Fontes/garet/Garet-Book.otf) format('opentype');
@@ -10,11 +10,11 @@
     --corback: #0D0D0D;
     --corback: #fff;
     --corbackcards: #0424D9;
+    --corbackcards1:#fced1b;
     --cortitle: #000000;
     --cortext001: #000;
     --cortext002: #F2F2F2;
     --coricons: #0424D9;
-    --coricons1: #F2E205;
 }
 
 body {max-width: 100%;}
@@ -25,23 +25,22 @@ header>nav {display: flex; justify-content: center;padding: 10px;}
 
 ul {display: flex;gap: 10px;justify-content: center;align-items: center;}
 
-li>a {padding: 10px;}
+li>a {padding: 10px; color: #F2F2F2;}
 
-li>a:hover {border-bottom: 3px solid var(--coricons); box-sizing: border-box;}
+li>a:hover{
+    background-color:white ;
+    color: #000;
+}
+
 /*Botão de dowload curriculum*/
-#resume-btn:hover {border-bottom: none;}
 
 .info>h1 {font-size: 3rem;}
 /*estilo da descrição sobre mim*/
 .description {width: 70vw;}
-.lenguages {
-    width: 70vw; 
-    border-bottom: 3px solid black;
-    border-right: 3px solid black;
-    border-left: 3px solid black;;
-}
-.projects {width: 70vw; border: 3px solid black;}
-.contact {width: 70vw; border: 3px solid black;}
+
+.lenguages {width: 70vw; }
+.projects {width: 70vw; }
+.contact {width: 70vw; }
 
 h3 {
     background-color: gray;
@@ -51,7 +50,7 @@ h3 {
     font-size: 3.5rem;
     margin-bottom: 50px;
     padding: 4px 10px;
-    width: 70vw;
+    width: 30rem;
     border: 2px solid black;
     box-shadow: 3px 3px 0px black;
     
@@ -59,18 +58,31 @@ h3 {
 }
 
 /*configuração de todos cards */
-.card {padding-top: 25px;box-shadow: none;}
+.card {
+    padding-top: 25px;
+    border: 2px solid black;
+    box-shadow: 3px 3px 0px black;
+}
 
 .card:hover {
-    background-color: var(--coricons);
-    margin: 0px 20px;
-    transform: scale(1.2) translate(0px, -20px);
+    transform: translate(0px, -20px);
     transition: 0.8s ease 0.2s;
 }
 /*Configuração do hover nos card's dos projetos*/
 .card-proj:hover {
     transform: scale(1.1) translate(0px, -20px);
     transition: 0.8s ease 0.2s;
+}
+.card-cont{
+    height: 60px;
+    width: 150px;
+    
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 0px 30px;
 }
 
 /*Configuração tamanho da fonte do footer*/

@@ -16,11 +16,11 @@
 
 :root {
     --corback: #ffffff;
-    --corbackcards: #1b42df;
+    --corbackcards: gray;
+    --corbackcards1:#fced1b;
     --cortitle: #000000;
     --cortext001: #000;
     --cortext002: #F2F2F2;
-    --coricons: #0424D9;
     --coricons1: #000000;
 
     --fontPrincipal:'Garet' ,sans-serif;
@@ -46,7 +46,7 @@ header {padding: 15px;}
 /*menu hamburger*/
 #burguer {
     display: block;
-    color: #000000;
+    color: var(--cortext001);
     text-align: center;
     cursor: pointer;
 }
@@ -60,24 +60,19 @@ header>nav {
 }
 
 header>nav>ul>li>a {
+    background-color:var(--corbackcards);
+    color: var(--cortext002);
     text-decoration: none;
-    color: var(--cortext001);
-    margin: 15px;
-    font-family: var(--fontPrincipal);
+    font-family: var(--fontTitle);
     font-size: 2.2rem;
-
-}
-
-ul>li {list-style: none;margin-bottom: 10px;}
- 
-/*Botao de dowload do curriculum*/
-#resume-btn {
-    background-color:gray;
-    color: #fff;
     padding: 0.5rem;
     border: 2px solid black;
     box-shadow: 3px 3px 0px black;
+
 }
+
+ul>li {list-style: none;margin-bottom: 30px;}
+ 
 
 main{
     padding: 2rem;
@@ -94,7 +89,6 @@ minha areá de atuação*/
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 20px;
     gap: 150px;
     padding: 10px;
 }
@@ -106,14 +100,16 @@ minha areá de atuação*/
 }
 
 #name-container {
+    background-color: var(--corbackcards1);
+    color: var(--cortext001);
+    font-family: var(--fontTitle);
+
     font-size: 3rem;
-    font-weight: bolder;
+
     overflow: hidden;
     white-space: nowrap;
     margin-left: 10px;
-    background-color: gray;
-    color: var(--cortext002);
-    font-family: var(--fontTitle);
+
     padding: 2px 10px;
     border: 2px solid black;
     box-shadow: 3px 3px 0px black;
@@ -141,9 +137,7 @@ minha areá de atuação*/
 */
 .description {
     padding: 15px;
-    margin-top: 50px;
-    background-color: gray;
-    
+    background-color: var(--corbackcards);
     border: 2px solid black;
     box-shadow: 3px 3px 0px black;
    
@@ -167,7 +161,7 @@ minha areá de atuação*/
     padding: 20px;
 }
 
-span {color: #020202;font-size: 2rem; font-weight: bolder;}/*mudança da cor do texto*/
+span {color:var(--corbackcards1);font-size: 2rem; font-weight: bolder;}/*mudança da cor do texto*/
 
 /*Fim da configuração da div descripition*/
 
@@ -182,8 +176,8 @@ span {color: #020202;font-size: 2rem; font-weight: bolder;}/*mudança da cor do 
 
 h3{
     width: 100%;
-    background-color: gray;
-    color: var(--cortext002);
+    background-color: var(--corbackcards1);
+    color: var(--cortext001);
     font-family: var(--fontTitle);
     text-align: center;
     font-size: 3.5rem;
@@ -201,7 +195,6 @@ h3{
     color: var(--cortitle);
     font-family: var(--fontPrincipal);
     text-align: center;
-    padding: 15px;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -257,7 +250,7 @@ footer>p {
 .box-proj {gap: 30px;}
 
 .card {
-    background-color: gray;
+    background-color: var(--corbackcards);
     padding: 10px;
     height: 120px;
     width: 100px;
@@ -269,14 +262,14 @@ footer>p {
     /*centralizei o conteudo no meio ^ no eixo y*/
     justify-content: center;
     /*centralizei o conteudo no meio no eixo x <---->*/
-    
+    gap: 10px;
     border: 2px solid black;
     box-shadow: 3px 3px 0px black;
     
 }
 
 .card-proj {
-    background-color: gray;
+    background-color: var(--corbackcards);
 
     height: 200px;
     width: 300px;
@@ -295,11 +288,10 @@ footer>p {
     font-family: var(--fontPrincipal);
     font-size: 1.4rem;
     color: var(--cortext002);
-    margin-top: 20px;
 
 }
 
-.card-proj>h4 {font-size: 2rem;}
+.card-proj>h4 { font-size: 2rem;}
 
 .card-proj>p {font-size: 1.4rem;}
 
@@ -307,6 +299,18 @@ footer>p {
     text-decoration: none;
     font-size: 2rem;
     color: var(--cortext002);}
+
+.card-cont{
+    height: 60px;
+    width: 150px;
+    
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 0px 30px;
+}
 
 .card>img {height: 4.5rem; width: 4.5rem;}/*configuração das imagens do card*/
 
