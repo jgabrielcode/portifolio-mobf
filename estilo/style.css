@@ -1,6 +1,10 @@
 @charset "UTF-8";
 
 @font-face {
+    font-family:'marlon' ;
+    src: url(../fontes/marlon/fonts/fonnts.com-marlonpro-ultrabold.otf) format("opentype");
+}
+@font-face {
     font-family: 'Garet';
     src: url(../Fontes/garet/Garet-Book.otf) format('opentype');
 }
@@ -10,19 +14,22 @@
 }
 
 
-
-
 :root {
-    --corback: #fff;
-    --corbackcards: #0424D9;
+    --corback: #ffffff;
+    --corbackcards: gray;
+    --corbackcards1:#fced1b;
     --cortitle: #000000;
     --cortext001: #000;
     --cortext002: #F2F2F2;
-    --coricons: #0424D9;
-    --coricons1: #F2E205;
+    --coricons1: #000000;
 
     --fontPrincipal:'Garet' ,sans-serif;
-    --fontAlternative:'IBMPlexMono'
+    --fontAlternative:'IBMPlexMono';
+    --fontTitle: 'marlon';
+    
+/*COLOQUEI FLEX WARAP NOS CARD DE LINGUAGENS PARA FICAR UM EM CIMA DO OUTRO 
+QUANDO A TELA DIMINUIR
+*/
 
 }
 
@@ -39,7 +46,7 @@ header {padding: 15px;}
 /*menu hamburger*/
 #burguer {
     display: block;
-    color: #000000;
+    color: var(--cortext001);
     text-align: center;
     cursor: pointer;
 }
@@ -53,25 +60,31 @@ header>nav {
 }
 
 header>nav>ul>li>a {
+    background-color:var(--corbackcards);
+    color: var(--cortext002);
     text-decoration: none;
-    color: var(--cortext001);
-    margin: 15px;
-    font-family: var(--fontPrincipal);
+    font-family: var(--fontTitle);
     font-size: 2.2rem;
-
-}
-
-ul>li {list-style: none;margin-bottom: 10px;}
- 
-/*Botao de dowload do curriculum*/
-#resume-btn {
-    background-color: var(--corbackcards);
-    color: #fff;
     padding: 0.5rem;
-    border-radius: 5px;
+    border: 2px solid black;
+    box-shadow: 3px 3px 0px black;
+
 }
 
-main {padding: 20px; margin: auto;}
+ul>li {list-style: none;margin-bottom: 30px;}
+
+#resume-btn{
+    background-color: var(--corbackcards1);
+    color: var(--cortext001);
+}
+
+main{
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8rem;
+}
 
 /*div profile onde tem (Olá eu sou) e uma transiçao com meu nome e 
 minha areá de atuação*/
@@ -80,7 +93,6 @@ minha areá de atuação*/
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 20px;
     gap: 150px;
     padding: 10px;
 }
@@ -88,16 +100,23 @@ minha areá de atuação*/
 .info>.container {
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
 #name-container {
+    background-color: var(--corbackcards1);
+    color: var(--cortext001);
+    font-family: var(--fontTitle);
+
     font-size: 3rem;
-    font-weight: bold;
+
     overflow: hidden;
     white-space: nowrap;
     margin-left: 10px;
-    color: var(--corbackcards);
-    font-family: var(--fontPrincipal);
+
+    padding: 2px 10px;
+    border: 2px solid black;
+    box-shadow: 3px 3px 0px black;
 }
 
 .container>h1 {
@@ -122,17 +141,17 @@ minha areá de atuação*/
 */
 .description {
     padding: 15px;
-    margin-top: 50px;
     background-color: var(--corbackcards);
-    border-radius: 20px;
+    border: 2px solid black;
+    box-shadow: 3px 3px 0px black;
    
 
 }
 
 .description>h2 {
     text-align: center;
-    font-size: 3rem;
-    font-family: var(--fontPrincipal);
+    font-size: 3.5rem;
+    font-family: var(--fontTitle);
     color: var(--cortext002);
     margin-left: 15px;
 }
@@ -146,20 +165,33 @@ minha areá de atuação*/
     padding: 20px;
 }
 
-span {color: #f5dd06;font-size: 2rem; font-weight: bolder;}/*mudança da cor do texto*/
+span {color:var(--corbackcards1);font-size: 2rem; font-weight: bolder;}/*mudança da cor do texto*/
 
 /*Fim da configuração da div descripition*/
 
 /*inicio da configuração da div lenguages*/
-.lenguages {color: var(--cortext001);margin-top: 100px;}
+.lenguages { 
+    color:var(--cortext001);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
-.lenguages>h3 {
-
-    font-family: var(--fontPrincipal);
-    margin-bottom: 50px;
-    color: var(--cortitle);
-    font-size: 3rem;
+h3{
+    width: 100%;
+    background-color: var(--corbackcards1);
+    color: var(--cortext001);
+    font-family: var(--fontTitle);
     text-align: center;
+    font-size: 3.5rem;
+    margin-bottom: 50px;
+    padding: 4px 10px;
+    width: 30rem;
+    border: 2px solid black;
+    box-shadow: 3px 3px 0px black;
+    
+    
 }
 
 /*configuração das div projects onde tera meus projetos*/
@@ -167,32 +199,25 @@ span {color: #f5dd06;font-size: 2rem; font-weight: bolder;}/*mudança da cor do 
     color: var(--cortitle);
     font-family: var(--fontPrincipal);
     text-align: center;
-    padding: 15px;
-    border-radius: 20px;
-
-    margin: auto;
-    margin-top: 120px;
-    margin-bottom: 60px;
-
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-.projects>h3 {margin-bottom: 50px;font-size: 3rem;}
+
 
 /*fim da div projects*/
 
 .contact {
     font-family: var(--fontPrincipal);
     margin-bottom: 5rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-.contact>h3 {
-
-    text-align: center;
-    color: var(--cortitle);
-    margin-bottom: 50px;
-    font-family: var(--fontPrincipal);
-    font-size: 3rem;
-}
 
 /* Inicio da estilização do rodape*/
 footer {
@@ -241,7 +266,9 @@ footer>p {
     /*centralizei o conteudo no meio ^ no eixo y*/
     justify-content: center;
     /*centralizei o conteudo no meio no eixo x <---->*/
-    border-radius: 40px 0px 20px 0px;
+    gap: 10px;
+    border: 2px solid black;
+    box-shadow: 3px 3px 0px black;
     
 }
 
@@ -265,18 +292,29 @@ footer>p {
     font-family: var(--fontPrincipal);
     font-size: 1.4rem;
     color: var(--cortext002);
-    margin-top: 20px;
 
 }
 
-.card-proj>h4 {font-size: 2rem;}
+.card-proj>h4 { font-size: 2rem;}
 
 .card-proj>p {font-size: 1.4rem;}
 
 .card-proj>h4>a {
-    text-decoration: 
-    none;font-size: 2rem;
+    text-decoration: none;
+    font-size: 2rem;
     color: var(--cortext002);}
+
+.card-cont{
+    height: 60px;
+    width: 150px;
+    
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 0px 30px;
+}
 
 .card>img {height: 4.5rem; width: 4.5rem;}/*configuração das imagens do card*/
 
