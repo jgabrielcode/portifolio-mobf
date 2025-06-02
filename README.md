@@ -28,24 +28,8 @@ Download do currículo em PDF
 
 🚀 Acesso ao Projeto
 Você pode acessar o projeto diretamente pelo link:
-👉 Acessar Portfólio
+[link](https://jgabrielcode.github.io/portifolio-mobf/)
 
-(Substituir pelo seu link real)
-
-🗂️ Como Executar o Projeto Localmente
-Clone o repositório:
-
-bash
-Copiar
-Editar
-git clone https://github.com/**seu-usuario**/**nome-do-repositorio**.git  
-Acesse a pasta do projeto:
-
-bash
-Copiar
-Editar
-cd **nome-do-repositorio**  
-Abra o arquivo index.html no seu navegador.
 
 🧠 Aprendizados
 Esse projeto foi uma oportunidade para:
@@ -54,29 +38,16 @@ Praticar e reforçar conhecimentos de HTML e CSS
 
 Trabalhar com responsividade usando Mobile First
 
-Implementar melhorias de layout e interatividade com JavaScript
+Entender o uso GitHub Pages e de branches
 
-Entender o fluxo de deploy usando GitHub Pages
-
-Organizar meu portfólio de forma profissional e escalável
-
-💡 Próximas melhorias (To-do)
- Implementar animações com CSS e/ou JavaScript
-
- Melhorias na acessibilidade (A11y)
-
- Dark Mode
-
- Tradução para outros idiomas (Ex.: Inglês)
-
- Formulário de contato funcional (usando alguma API ou backend)
+Organizar o codigo do meu portfólio
 
 🔗 Links Importantes
-🔥 Portfólio online
+🔥 [Portfólio online](https://jgabrielcode.github.io/portifolio-mobf/)
 
-🐙 Meu GitHub
+🐙 [Meu GitHub](https://github.com/jgabrielcode)
 
-💼 Meu LinkedIn
+💼 [Meu LinkedIn](https://www.linkedin.com/in/jo%C3%A3o-gabriel-de-freitas-costa-652b82261/)
 
 🤝 Contribuições
 Fique à vontade para abrir issues, enviar sugestões ou realizar pull requests!
