@@ -1,6 +1,5 @@
 # portifolio-mobf
 
-Meu Portfólio Pessoal
 Bem-vindo(a) ao repositório do meu portfólio pessoal! 🚀
 Este projeto foi desenvolvido com o objetivo de apresentar minha trajetória, minhas habilidades, meus projetos, meus contatos e também disponibilizar meu currículo em PDF.
 
