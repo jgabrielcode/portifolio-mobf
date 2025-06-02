@@ -20,8 +20,15 @@ li>a:hover{
     background-color:white ;
     color: #000;
 }
+#name-container {
+    font-size: 3rem;
+   
+}
 
-/*Botão de dowload curriculum*/
+.container>h1 {
+    font-size: 3rem;
+
+}
 
 .info>h1 {font-size: 3rem;}
 /*estilo da descrição sobre mim*/

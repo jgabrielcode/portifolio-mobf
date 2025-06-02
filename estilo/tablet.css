@@ -10,3 +10,7 @@ header > nav > a{font-size: 1.4em;}
 .info > h1 {font-size: 3em;}
 /*Estilo da descrição sobre mim*/
 .description{width: 70vw;margin: auto;}
+
+#name-container {font-size: 3rem;}
+
+.container>h1 { font-size: 3rem;}
