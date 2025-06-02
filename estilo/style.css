@@ -105,7 +105,7 @@ minha areá de atuação*/
     color: var(--cortext001);
     font-family: var(--fontTitle);
 
-    font-size: 3rem;
+    font-size: 2rem;
 
     overflow: hidden;
     white-space: nowrap;
@@ -118,7 +118,7 @@ minha areá de atuação*/
 
 .container>h1 {
 
-    font-size: 3rem;
+    font-size: 2rem;
     font-family: var(--fontPrincipal);
     color: var(--cortext001);
     text-align: center;
