@@ -15,8 +15,8 @@
 
 
 :root {
-    --corback: #ffffff;
-    --corbackcards: gray;
+     --corback: #ffffff;
+    --corbackcards: #383838;
     --corbackcards1:#fced1b;
     --cortitle: #000000;
     --cortext001: #000;
@@ -25,9 +25,8 @@
 
     --fontPrincipal:'Garet' ,sans-serif;
     --fontAlternative:'IBMPlexMono';
-    --fontTitle: 'marlon';
-    
-
+    --fontTitle: 'marlon'; 
+   
 }
 
 * {
@@ -38,6 +37,62 @@
 }
 
 body {background-color: var(--corback); overflow-x: hidden;}
+    
+/* Section de dark mode */
+body.darkColor{
+    background-color: black;
+}
+
+body.darkColor #darkMode{
+    background-color: #ffffff;
+    color: #000;
+    
+}
+body.darkColor #burguer{
+    color: white;
+}
+
+body.darkColor header>nav>ul>li>a{
+    background-color: #fffefe;
+    color: black;
+    box-shadow: none;
+}
+
+
+body.darkColor #name-container {
+  background-color: #fffefe;
+  color: #000000;
+  padding: 0.5rem;
+  
+}
+
+body.darkColor  .container > h1,
+body.darkColor .info > p {
+  color: #ffffff;
+}
+
+body.darkColor  .description{
+    background: #383838;
+    
+}
+
+body.darkColor  .box .card{
+    background-color: #383838;
+    
+}
+
+body.darkColor footer, body.darkColor  footer>p{
+    background-color: #383838;
+    color: white;
+}
+
+body.darkColor h3{
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    
+}
+
+/* Fim da section  de dark mode */
 
 header {padding: 15px;}
 /*menu hamburger*/
@@ -64,11 +119,49 @@ header>nav>ul>li>a {
     font-size: 2.2rem;
     padding: 0.5rem;
     border: 2px solid black;
-    box-shadow: 3px 3px 0px black;
+    box-shadow: 3px 3px 0px rgb(255, 255, 255);
 
 }
 
 ul>li {list-style: none;margin-bottom: 30px;}
+
+#darkMode{
+    background-color: #fced1b;
+    width: 7rem;
+    height: 3rem;
+
+    display: flex;
+    align-items: center;
+    
+    position: absolute;
+    top: 15px;
+    right: 3rem;
+    z-index: auto;
+
+    border: 2px solid black;
+    box-shadow: 3px 3px 0px black;
+    cursor: pointer;
+    
+}
+#darkMode>i{
+    color: #000;
+    margin-left: 1rem;
+
+    font-size: 1.6rem;
+    cursor: pointer;
+
+    transition: opacity 0.3s ease, transform 0.3s ease;
+  display: inline-block; /* necessário para aplicar transform */
+    
+}
+
+#darkMode>#moon{
+display: block;
+}
+
+#darkMode>#soon{
+display: none;
+}
 
 #resume-btn{
     background-color: var(--corbackcards1);
@@ -113,7 +206,7 @@ minha areá de atuação*/
 
     padding: 2px 10px;
     border: 2px solid black;
-    box-shadow: 3px 3px 0px black;
+    box-shadow: 3px 3px 0px rgb(0, 0, 0);
 }
 
 .container>h1 {
@@ -133,6 +226,7 @@ minha areá de atuação*/
     color: var(--cortext001);
 
 }
+
 
 /*Configuraçoes da div descripition onde terá uma breve descrição sobre mim
 */
