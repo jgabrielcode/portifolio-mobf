@@ -7,17 +7,14 @@
     <link rel="stylesheet" href="estilo/style.css" media="all">
     <link rel="stylesheet" href="estilo/desktop.css" media="(min-width: 1020px)">
     <link rel="stylesheet" href="estilo/tablet.css" media="(min-width: 768px)">
-    <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=menu" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=notes" />
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
     <title>Meu Portifólio</title>
 </head>
 
-<body onresize="mudouTamanho()">
+<body>
     <header>
-        <span id="burguer" class="material-symbols-outlined" onclick="clickMenu()">
-            menu
-        </span>
+        <span id="burguer" class="material-symbols-outlined"> notes</span> 
         <nav id="menu">
 
             <ul>
@@ -138,45 +135,13 @@
             </div>
 
     </main>
+    
     <footer>
         <p>
             © 2025 João Gabriel.All rights reserved.
         </p>
     </footer>
-    <script>
 
-        function mudouTamanho() {
-            if (window.innerWidth >= 1020) {
-                menu.style.display = 'block'
-            } else {
-                menu.style.display = 'none'
-            }
-        }
-
-        function clickMenu() {
-            if (menu.style.display == 'block') {
-                menu.style.display = 'none';
-            } else {
-                menu.style.display = 'block';
-            }
-
-        }
-
-        const nameContainer = document.getElementById("name-container");
-        const name = "Joao Gabriel";
-        let index = 0;
-
-        function typeWriter() {
-            if (index < name.length) {
-                nameContainer.textContent += name[index];
-                index++;
-                setTimeout(typeWriter, 100); // Ajuste o tempo entre as letras
-            }
-        }
-
-        window.addEventListener("load", typeWriter);
-    </script>
-
+    <script src="assets/js/app.js"></script>
 </body>
-
 </html>
