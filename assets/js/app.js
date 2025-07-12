@@ -74,6 +74,7 @@ function toggleIcon() {
 
 // Exemplo: ligar ao clique no container ou em um botão
 btDarkMode.addEventListener('click', toggleIcon);
+
 btDarkMode.addEventListener('click',(e)=>{
     const el = e.target.id
     console.log(el)
