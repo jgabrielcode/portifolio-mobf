@@ -35,6 +35,8 @@
     box-sizing: border-box;
     font-size: 62.5%;
     -webkit-tap-highlight-color: transparent;
+    user-select: none;
+  -webkit-user-select: none; /* Safari e Chrome mobile */
 }
 
 body {background-color: var(--corback); overflow-x: hidden;}
