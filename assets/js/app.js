@@ -47,7 +47,7 @@ function toggleIcon() {
 
   let nextIcon = currentIcon === moon ? soon : moon;
 
-  // Passo 1: anima o ícone atual para sair pra direita + sumir
+  //anima o ícone atual para sair pra direita + sumir
   currentIcon.style.transition = 'opacity 0.3s ease, transform 0.3s ease';
   currentIcon.style.opacity = '0';
   currentIcon.style.transform = 'translateX(20px)';
@@ -71,8 +71,6 @@ function toggleIcon() {
     nextIcon.style.transform = 'translateX(0)';
   }, 300); // espera a transição do fade out terminar
 }
-
-// Exemplo: ligar ao clique no container ou em um botão
 btDarkMode.addEventListener('click', toggleIcon);
 
 btDarkMode.addEventListener('click',(e)=>{
